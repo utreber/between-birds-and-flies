@@ -1,0 +1,1148 @@
+<!DOCTYPE html>
+<html class="no-js" lang="de">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Between birds and flies</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="manifest" href="{{ url_for('static', filename='site.webmanifest') }}" />
+    <link rel="icon" sizes="32x32" href="{{ url_for('static', filename='favicon-32x32.png') }}">
+    <link rel="icon" sizes="16x16" href="{{ url_for('static', filename='favicon-16x16.png') }}">
+    <link rel="mask-icon" color="5bbad5" href="{{ url_for('static', filename='safari-pinned-tab.svg') }}">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <!-- Place favicon.ico in the root directory -->
+
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="{{url_for('static', filename='css/main.css')}}" />
+
+    <meta name="theme-color" content="#ffffff" />
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.0.1/dist/gsap.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/ScrollMagic.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/plugins/animation.gsap.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/plugins/debug.addIndicators.js"></script>
+    <script src="../static/js/main.js"></script>
+</head>
+
+<body>
+    <!-- NAVIGATION -->
+    <nav id="menu">
+        <img id="menu-cover" src="../static/Austausch Flo/02_inhalt illustrationen/02_story_aline/aline_strohhalm outlines.png" />
+        <ul>
+            <li><a id="nav-01" href="#section0"><span>01</span> Start</a></li>
+            <li><a id="nav-02" href="#section1"><span>02</span> Aline und die Schildkröte</a></li>
+            <li><a id="nav-03" href="#section2"><span>03</span> Die Reise unserer Abfälle</a></li>
+            <li><a id="nav-04" href="#section3"><span>04</span> Ericas Familienunternehmen</a></li>
+        </ul>
+    </nav>
+    <img id="open-menu-mobile" src="../static/Austausch Flo/01_grundlegendes/menue_hamburger schwarz.png" />
+    <nav class="language-picker">
+        <ul>
+            <li><img id="open-menu" src="../static/Austausch Flo/01_grundlegendes/menue_hamburger blau.png" /></li>
+            <li><a id="pt" class="language-picker-color" href="{{ url_for('pt') }}">PT</a></li>
+            <li><a id="en" class="language-picker-color" href="{{ url_for('en') }}">EN</a></li>
+            <li><a id="de" class="language-picker-color" href="{{ url_for('index') }}">DE</a></li>
+        </ul>
+    </nav>
+    <div id="cover">
+        <h1 id="cover-h1">Between <br />birds <br />and flies</h1>
+        <img id="cover-image" src="../static/Austausch Flo/02_inhalt illustrationen/01_coverbild/Cover Animation_gg.gif" />
+    </div>
+    <!-- INTRO -->
+    <div class="section" id="spacer-section"></div>
+    <div class="section" id="section0">
+        <div class="left-column">
+            <nav id="intro">
+                <ul>
+                    <li><a id="nav-01" href="#section0"><span>01</span> Start</a></li>
+                    <li><a id="nav-02" href="#section1"><span>02</span> Aline und die Schildkröte</a></li>
+                    <li><a id="nav-03" href="#section2"><span>03</span> Die Reise unserer Abfälle</a></li>
+                    <li><a id="nav-04" href="#section3"><span>04</span> Ericas Familienunternehmen</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="right-column" id="section0-text">
+            <p>Hallo und herzlich willkommen bei <u>Between birds and flies.</u> Auf dieser Website findest du viele Informationen über die brasilianischen Müllsammler, auch Catadores genannt. Sie haben eine wichtige Rolle in Brasilien, da es Vielerorts
+                keine Müllabfuhr gibt. Dadurch landen Abfälle oftmals auf wilden Deponien oder werden achtlos auf die Straßen geworfen. Dies hat viele negative Umweltauswirkungen, wie beispielsweise verunreinigtes Grundwasser oder die Freisetzung von
+                hochentzündlichem Methangas. Des weiteren leben auf den sogenannten Lixões viele Vögel, Mücken oder Mäuse, welche wiederum leicht schwere <a href="#" onclick="return false;" title="Gelbfieber, Typhus, Dengue-Fieber, usw.">Krankheiten</a>                übertragen können.</p>
+            <p>Catadores sorgen dafür, dass Wertstoffe zu entsprechenden Recyclinganlagen gelangen und dort weiterverarbeitet werden können. Dies fördert die regionale Wirtschaft und schont die Ressourcen. Die Müllsammler tragen also nicht nur eine hohe
+                Verantwortung für die Umwelt, sondern sind auch eine wichtige Stütze der Gesellschaft.</p>
+            <p id="fade-out-menu-trigger">Jetzt bist du an der Reihe, du entscheidest, was du erfahren möchtest. Scrolle einfach nach unten und lese in chronologischer Reihenfolge oder wähle ein Thema, das dich am meisten anspricht. Viel Spaß und zögere nicht die Seite mit Familie
+                und Freunden zu teilen.</p>
+        </div>
+    </div>
+    <div class="section" id="section1">
+        <div class="left-column">
+            <img class="desktop-ilu" id="aline-contour" src="../static/Austausch Flo/02_inhalt illustrationen/02_story_aline/01_portrait aline FINAL/Aline_outline_blinzeln_nomatte.gif" />
+            <img class="desktop-ilu" id="aline-fill" src="../static/Austausch Flo/02_inhalt illustrationen/02_story_aline/01_portrait aline FINAL/aline colors.png" />
+            <img class="desktop-ilu" id="cataki" src="../static/Austausch Flo/02_inhalt illustrationen/02_story_aline/02_cataki app FINAL/cataki.gif" />
+            <img class="desktop-ilu" id="flood3" src="../static/Austausch Flo/02_inhalt illustrationen/02_story_aline/03_ueberschwemmung FINAL/Wasser animation final.gif" />
+            <img class="desktop-ilu" id="turtle" src="../static/Austausch Flo/02_inhalt illustrationen/02_story_aline/04_schildkroete FINAL/Schildkroete.gif" />
+        </div>
+        <div class="right-column" id="aline-text">
+            <h1>02 - Aline und die Schildkröte</h1>
+            <img class="mobile-ilu" id="aline-contour" src="../static/Austausch Flo/02_inhalt illustrationen/02_story_aline/01_portrait aline FINAL/alles_aline portrait.png" />
+            <p>Ich treffe Aline vor einem McDonalds in São Paulo. Nach einer kurzen Begrüßung setzen wir uns an einen der steinernen Tische vor dem Geschäft. Sie nimmt neben mir Platz. Gegenüber sitzt Marco, er wird für mich Dolmetschen, da ich selbst kein
+                Portugiesisch spreche. Aline hat ihre 15-jährige Tochter dabei.</p>
+            <p>Als Erstes fallen mir bei der Catadora ein kleines Herztattoo unter ihrem rechten Auge und ihre Sommersprossen auf dem runden Gesicht auf. Die dunklen Haare hat sie zu einem lockeren Knoten am Hinterkopf zusammengebunden und ihre braunen Augen
+                mit Kajal umrandet. Sie wirkt etwas schüchtern, unsicher und weicht meinem Blick aus. Ich hole mein Handy aus meiner Tasche und schiebe es zu Marco, damit er mit den Fragen anfangen kann.</p>
+            <p>Ich lausche dem portugiesischem Singsang, von dem ich nur manche Wörter verstehe und bemerke wie bestimmt Aline spricht. Sie erzählt, dass sie erst seit ungefähr einem Jahr als Catadora arbeitet, nebenbei hat sie noch ein eigenes Flip-Flop
+                Geschäft. Die Schuhe, die sie dort verkauft, macht sie selbst. Darum gibt es für sie eigentlich auch kein Wochenende, sie hat immer alle Hände voll zu tun und arbeitet jeden Tag. Auch ihr Mann ist im Recycling tätig, er sammelt Schüttgut
+                und fährt dieses zu den entsprechenden Recyclingfirmen. Ihre Tochter und der 17-jährige Sohn gehen beide noch zur Schule.</p>
+            <p><span id="aline-out"></span>Freie Tage sind selten. Eigentlich versuchen sie jeden Tag zu arbeiten, um die Familie zu versorgen. Nur so haben sie genügend Einkommen. Am Tag sammelt Aline ungefähr 15-20 Säcke; mal mehr, mal weniger. Zurzeit
+                arbeitet sie auch mit zwei Unternehmen zusammen, welche sie monatlich bezahlen. Pro Monat sind das ungefähr <a href="#" onclick="return false;" title="Ungefähr 55€">R$250</a>, eine sichere und regelmäßige Einnahmequelle. Sie holt dort
+                das getrennte Material ab und bringt es zu einem Recyclingunternehmen. </p>
+            <img class="mobile-ilu" src="../static/Austausch Flo/02_inhalt illustrationen/02_story_aline/02_cataki app FINAL/cataki.gif" />
+            <p id="cataki-in">Das war aber nicht immer so. Anfangs hat sie auf der Straße gearbeitet. Vor etwa einem Monat aber hat sie über Globo, eine brasilianische Nachrichtenseite (<a href="https://www.globo.com">globo.com</a>) die App Cataki entdeckt. Cataki (
+                <a href="https://cataki.org">cataki.org</a>) soll Catadores und Anwohner zusammenführen und das Recycling steigern. Wenn ein Brasilianer Müll hat, den er gerne loswerden möchte, kann er in der App nach Catadores in seiner Umgebung suchen.
+                Diese können sich Profile erstellen und angeben, welche Materialien sie sammeln. Mit einem Klick kann man dort die Person per WhatsApp kontaktieren oder direkt anrufen. Aline ist richtig begeistert von der App, sie versucht möglichst viele
+                Kollegen darauf aufmerksam zu machen, um auch deren Arbeit zu erleichtern. Ihrer Meinung nach gibt es genug Müll für alle und im Endeffekt verfolgen alle das selbe Ziel: mehr Recycling für Brasilien und die Umwelt.
+            </p>
+            <q><span id="cataki-out"></span>Stell dir mal vor, dein zu Hause ist bis zu den Knien voller Wasser, weil
+                Müll
+                eine Verstopfung im Abwasser
+                verursacht hat. Recycling hilft nicht nur dabei, sondern kann auch eine gute finanzielle Hilfe sein.</q>
+            <img class="mobile-ilu-fullscreen" id="flood3" src="../static/Austausch Flo/02_inhalt illustrationen/02_story_aline/03_ueberschwemmung FINAL/Wasser animation final.gif" />
+            <p id="flood-pin"><span id="flood-in"></span>Das Thema Umwelt ist für Aline ein wichtiges Anliegen. Aber erst nachdem ihr Haus das erste mal unter Wasser stand, hat sie sich mit der Problematik beschäftigt. ′Früher war es mir ehrlich gesagt egal. Aber seit
+                sich das mit der Arbeit weiterentwickelt hat, gehe ich richtig auf. Stell dir mal vor, dein zu Hause ist bis zu den Knien voller Wasser, weil Müll eine Verstopfung im Abwasser verursacht hat. Recycling hilft nicht nur dabei, sondern kann
+                auch eine gute finanzielle Hilfe sein.′ Seitdem verfolgt sie die Geschehnisse aufmerksam und wird sauer, wenn sie Leute über das Hochwasser meckern hört, obwohl diese selbst dafür verantwortlich sind. Durch das achtlose wegwerfen des Mülls
+                verstopfen die Abflüsse. Aber die Anwohner wissen nicht warum das überhaupt passiert, dafür müsste die Aufklärung stärker sein. Trotz dessen ist es ihrer Meinung nach schon besser geworden. Es wird mehr Mülltrennung betrieben, vor allem
+                in Wohnungsanlagen. Natürlich gibt es immer noch Orte an denen nicht auf Mülltrennung geachtet wird, aber vor allem durch die Medien wird immer mehr Aufmerksamkeit darauf gelenkt. Sie nennt als Beispiel das Bild mit der Schildkröte welche
+                einen Strohhalm im Nasenloch stecken hat. Daraufhin merkt Marco an, dass er die Tage in der Stadt unterwegs war und einen Saft getrunken hat. Den dazugehörigen Strohhalm hat er abgelehnt und findet es schade, dass immer noch so viele Läden
+                Plastikstrohhälme benutzen. Das bekräftigt Aline und erzählt, dass aufgrund des Mülls viele Fische sterben und viele Flüsse, unter anderem auch <a href="#" onclick="return false;" title="Ein 1.130 km langer Fluss, welcher unter anderem durch São Paulo fließt.">Tietê</a>,
+                teilweise nur noch aus Müll bestehen.
+                <span id="flood-out"></span>
+            </p>
+            <img class="mobile-ilu-fullscreen" id="turtle" src="../static/Austausch Flo/02_inhalt illustrationen/02_story_aline/04_schildkroete FINAL/Schildkroete.gif" />
+            <q><span id="turtle-in"></span>Zwischen all diese Menschen in Brasilien und in der Welt weißt du, dass ein
+                kleiner
+                Teil dieser Veränderung dir
+                gehört. Es ist wie ein Gebäude. Dein Ziegelstein liegt irgendwo dazwischen.</q>
+            <p id="turtle-pin">Zu meiner Frage was sie von einer möglichen Kampagne hält, welche auf die Arbeit der Catadores aufmerksam macht, äußert Aline sich folgendermaßen: ′Ich glaube es ist toll zu wissen, dass du ein kleiner Teil vom Ganzen bist, dass du da bist
+                und helfen kannst. Zwischen all diesen Menschen in Brasilien und in der Welt weißt du, dass ein kleiner Teil dieser Veränderung dir gehört. Es ist wie ein Gebäude. Dein Ziegelstein liegt irgendwo dazwischen.′ Aber Anerkennung braucht sie
+                nicht, sie selbst weiß ja, dass sie helfen kann. ′Wenn wir auf die Anerkennung von anderen warten, werden wir sie nie bekommen. Heutzutage sehen Menschen die Anderen nicht. Sie denken nur an sich selbst.′ Viele Menschen sähen Müllsammler
+                einfach nicht gerne, sie schauen sie anders an und denken manchmal dass die Catadores sie überfallen würden. Dabei machen diese Menschen nur ihre Arbeit und gehen dabei die <a href="#" title="Die Paes de Barros ist eine fast vier Kilometer lange Straße in der Stadt São Paulo,
+        welche den Stadtteil Mooca mit der Innenstadt verbindet.">Paes de Barros</a> hoch und runter. Wenn die Catadores dann mit ihrem vollen Wagen die Straße kreuzen müssen, beleidigen sie manche Menschen deswegen. ′Solche Leute müssen auch verstehen,
+                dass diese Person gerade einfach nur ihre Arbeit macht und zwar mit Recycling. Er sammelt gerade den Müll, den du wegschmeißt. Aber Vielen ist immer noch nur die soziale Klasse wichtig. Für mich sind alle gleich. Wenn wir sterben, werden
+                wir Staub. Ich verstehe nicht, warum man diesen Unterschied macht. Das mag ich nicht.′ Die Arbeitsbedingungen sind auch so schon nicht ungefährlich. Aline trägt immer Handschuhe, um zu vermeiden, sich zu schneiden, da oft gebrochenes Glas
+                im Müll ist. Außerdem ist auch eine Maske empfehlenswert, da man sich leicht mit Krankheiten anstecken kann. Generell würde es schon sehr helfen, wenn die Anwohner besser Müll trennen würden. Mehr möchte sie überhaupt nicht.
+            </p>
+            <p>Am Ende des Gesprächs stellt Aline noch ein paar Fragen über Deutschland, vor allem über das Studieren dort. Ihre Tochter möchte gerne Jura studieren und überlegt dafür ins Ausland zu gehen. Sie fragt ob die Universitäten gut sind und wie
+                teuer das Studieren ist. Nach ungefähr einer Stunde verabschieden wir uns. Aline bedankt sich überschwänglich und schließt mich in ihre Arme. Sie ist aufgetaut und jetzt viel lockerer als zu Beginn. Es ist schön zu sehen, wie ihr unser
+                Gespräch irgendwie ein Fünkchen Hoffnung geben konnte, auch, wenn ich noch überhaupt nichts getan habe. Aber ich habe das Gefühl, allein schon das Interesse, welches ich ihrer Person und ihrer Arbeit zukommen habe lassen, bestärkt sie.
+                Sie bedankt sich nochmal für alles und geht dann zusammen mit ihrer Tochter die Straße entlang, zurück an die Arbeit.
+                <span id="turtle-out"></span></p>
+            <span id="section1-end"></span>
+        </div>
+    </div>
+    <div class="infographic" id="infographic1">
+        <div class="info-count" id="waste-count1">
+            <span id="waste-count1-number" class="count">78</span><span class="count">,3</span>
+            <p>Millionen Tonnen Hausmüll wurden 2016 in Brasilien produziert.</p>
+        </div>
+        <div class="info-count" id="waste-count2">
+            <span id="waste-count2-number" class="count">42</span><span class="count">%</span>
+            <p>landeten auf wilden Deponien, sogenannte Lixões.</p>
+        </div>
+        <div class="info-count" id="waste-count3">
+            <span id="waste-count2-number" class="count">58</span><span class="count">%</span>
+            <p>wurden davon lediglich vorschriftsgemäß entsorgt.</p>
+        </div>
+        <img class="waste desktop-ilu" id="waste1" src="../static/Austausch Flo/02_inhalt illustrationen/03_infografik_muelltonne/richtige_step01 muelltrennung .png" />
+        <img class="waste desktop-ilu" id="waste2" src="../static/Austausch Flo/02_inhalt illustrationen/03_infografik_muelltonne/richtige_step 02 muelltrennung .png" />
+        <img class="waste desktop-ilu" id="waste3" src="../static/Austausch Flo/02_inhalt illustrationen/03_infografik_muelltonne/richtige_step 03 und 58% muelltrennung .png" />
+        <img class="waste desktop-ilu" id="waste4" src="../static/Austausch Flo/02_inhalt illustrationen/03_infografik_muelltonne/richtige_step 04 muelltrennung .png" />
+        <img class="waste desktop-ilu" id="waste5" src="../static/Austausch Flo/02_inhalt illustrationen/03_infografik_muelltonne/richtige_step 05 muelltrennung.png" />
+        <img class="waste desktop-ilu" id="waste6" src="../static/Austausch Flo/02_inhalt illustrationen/03_infografik_muelltonne/richtige_step 06 muelltrennung .png" />
+        <img class="waste desktop-ilu" id="waste7" src="../static/Austausch Flo/02_inhalt illustrationen/03_infografik_muelltonne/richtige_muelltrennung 42%.png" />
+    </div>
+    <span id="infographic1-end"></span>
+    <div class="infographic" id="mobile-waste1">
+        <div class="info-count mobile-infographic-counter" id="waste-count1">
+            <span id="waste-count1-number" class="count">78</span><span class="count">,3</span>
+            <p>Millionen Tonnen Hausmüll wurden 2016 in Brasilien produziert.</p>
+        </div>
+        <img class="mobile-ilu-fullscreen waste-spacer mobile-infographic-position" src="../static/Austausch Flo/02_inhalt illustrationen/03_infografik_muelltonne/richtige_step 06 muelltrennung .png" />
+    </div>
+    <div class="infographic" id="mobile-waste2">
+        <div class="info-count mobile-infographic-counter" id="waste-count2">
+            <span id="waste-count2-number" class="count">42</span><span class="count">%</span>
+            <p>landeten auf wilden Deponien, sogenannte Lixões.</p>
+        </div>
+        <img class="mobile-ilu waste-spacer mobile-infographic-position" src="../static/Austausch Flo/02_inhalt illustrationen/03_infografik_muelltonne/richtige_muelltrennung 42%.png" />
+    </div>
+    <div class="infographic" id="mobile-waste3">
+        <div class="info-count mobile-infographic-counter" id="waste-count3">
+            <span id="waste-count2-number waste-spacer" class="count">58</span><span class="count">%</span>
+            <p>wurden davon lediglich vorschriftsgemäß entsorgt.</p>
+        </div>
+        <img class="mobile-ilu mobile-infographic-position" src="../static/Austausch Flo/02_inhalt illustrationen/03_infografik_muelltonne/58%_zuschnitt_muelltrennung .png" />
+    </div>
+    <div class="section" id="section2">
+        <div class="left-column">
+            <svg class="desktop-ilu" id="coop-map1" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 926.31 931.41" style="enable-background:new 0 0 926.31 931.41;" xml:space="preserve">
+                <path class="coop-map1-contours" style="fill:none;" d="M448.41,665.39c-26.44-1.42-52.96-1.29-79.39,0.39c-2.04,25.53-3.12,51.14-3.24,76.76
+				c-0.04,7.73,0.01,15.47-0.54,23.18c-1.33,18.65-6.15,37.37-3.12,55.83c29.61,1.75,59.24,3.05,88.89,3.9
+				c2.88-37.62,3.99-75.37,3.34-113.09c-0.27-15.49-0.87-31.2-5.62-45.94" />
+                <path class="coop-map1-contours" style="fill:none;" d="M508.86,137.14c0.48-12.18,1.08-24.83,6.74-35.63c1.54-2.94,3.48-5.74,6.13-7.75
+				c2.61-1.98,5.76-3.09,8.85-4.16c16.6-5.78,33.41-11.61,50.91-13.22c10.95-1.01,22.09-0.37,32.86-2.61
+				c6.53-1.36,12.79-3.77,19.22-5.55c17.87-4.97,36.68-5.1,55.23-5.2c9.68-0.05,19.46-0.09,28.93,1.94
+				c8.79,1.89,17.1,5.52,25.2,9.43c21.92,10.57,43.18,23.68,58.75,42.38c8.17,9.82,15.15,21.46,26.63,27.05
+				c6.16,2.99,13.27,4.03,18.85,8.01c8.55,6.1,11.29,17.36,13.42,27.65c2.43,11.76,7.42,20.64,9.85,32.4l0.89,7.5
+				c0.06,23.68-17.59,43.01-30.2,63.05c-10.63,16.89-18.06,35.56-25.44,54.1c-3.18,7.99-6.38,16.08-7.55,24.6
+				c-3.9,28.51,15.46,56.53,11.07,84.97c-2.74,17.76-14.82,33.25-30.14,42.64c-15.32,9.39-33.57,13.15-51.53,13.48
+				c-14.48,0.26-29.59-1.5-42.93,4.14c-11.45,4.84-20.08,14.56-27.41,24.61c-12.38,16.96-22.26,35.75-29.21,55.56
+				c-8.46,24.1-12.74,49.97-25.7,71.98c-2.63,4.47-5.81,8.92-10.47,11.2c-4.07,1.99-8.78,2.06-13.31,2.07
+				c-28.23,0.03-56.47-1.32-84.57-4.02c-5.42-0.52-11.03-1.16-15.67-3.99c-8.54-5.21-11.39-16.25-11.91-26.24
+				c-1.46-28.23,9.62-55.64,23.37-80.34c7.33-13.16,15.55-26.03,19.91-40.45c3.73-12.32,4.49-25.33,4.68-38.19
+				c1.21-84.01-21.23-167.21-17.97-251.17C506.3,227.35,507.78,164.37,508.86,137.14z" />
+                <path class="coop-map1-contours" style="fill:none;" d="M501.41,16.86c1.93,50.08-16.73,143.95-14.54,194.01l2.54,14.99
+				c11.36,72.66,12.74,145.65,24.09,218.31c2.76,17.64,5.5,35.76,1.69,53.2c-6.84,31.32-33.46,54.96-42.78,85.64
+				c-3.88,12.76-4.59,26.24-5.23,39.56c-3.88,80.88-6.51,215.31-6.78,296.28" />
+                <path class="coop-map1-contours" style="fill:none;" d="M236.13,336.52c5.94-4.66,12.8-7.99,19.59-11.28c16.31-7.9,32.63-15.81,48.94-23.71
+				c1.32,4.78,0.68,9.86-0.01,14.78c-3.87,27.71-8.69,55.29-14.45,82.67c-0.84,3.99-1.53,8.67,1.22,11.69
+				c1.04,1.15,2.47,1.88,3.91,2.45c8.23,3.23,18.41,1.13,26.96-1.12c8.12-2.13,16.32-5.97,24.92-8.07c0.96-0.23,2.03-0.42,2.87,0.09
+				c0.96,0.58,1.23,1.83,1.38,2.94c1.17,8.74-0.61,16.73-3.27,25.14c-1.19,3.77-2.87,7.57-5.91,10.08
+				c-2.68,2.22-6.15,3.21-9.56,3.89c-13.42,2.67-27.29,1.29-40.9-0.09c-11.27-1.15-22.55-2.3-33.82-3.45
+				c-3.52-0.36-7.24-0.8-10.04-2.95c-3.13-2.42-4.46-6.48-5.23-10.36c-1.37-6.86-1.55-13.88-1.74-20.87
+				c-0.65-24.8-1.29-49.6-1.94-74.4" />
+                <path class="coop-map1-contours" style="fill:none;" d="M146.41,322.88c-1.58,6.52,1.99,13.32,6.87,17.92s10.99,7.65,16.44,11.56s10.51,9.17,11.62,15.78
+				c0.51,3.03,0.14,6.13,0.35,9.19c0.07,1.11,0.45,2.47,1.54,2.66c0.63,0.11,1.24-0.23,1.77-0.59
+				c15.72-10.45,16.4-35.92,32.99-44.93c2.57-1.39,5.42-2.31,7.71-4.13c6.75-5.36,5.89-15.86,3.01-23.98
+				c-2.99-8.43-7.46-16.33-13.16-23.22c-3.55-4.31-8.09-8.47-13.66-8.85c-4.83-0.33-9.33,2.26-13.48,4.76
+				c-8.97,5.41-18.01,10.86-25.73,17.95s-14.11,16-16.46,26.21" />
+                <path class="coop-map1-contours" style="fill:none;" d="M329.41,547.86c3.02-28.87,6.08-57.28,9.94-86.05c0.22-1.64,0.47-3.35,1.4-4.72
+				c0.86-1.27,2.22-2.1,3.6-2.77c11.19-5.44,24.38-2,36.68-0.18c9.55,1.41,19.26,1.76,28.89,1.04c2.65-0.2,5.51-0.43,7.78,0.95
+				c2.58,1.58,3.65,4.91,3.38,7.92s-1.64,5.8-2.99,8.51c-7.2,14.47-15.39,28.94-22.59,43.4
+				C369.17,555.29,345.67,583.44,329.41,547.86z" />
+                <path class="coop-map1-contours" style="fill:none;" d="M387.44,679.44c-0.31,20.39-0.62,40.77-0.94,61.16c-0.01,0.74,0.01,1.57,0.53,2.1
+				c0.51,0.52,1.32,0.57,2.05,0.59c15.34,0.36,30.69,0.72,46.03,1.08c0.78,0.02,1.65,0,2.22-0.53c0.52-0.49,0.63-1.26,0.7-1.96
+				c2.32-21.56,3.29-43.26,2.9-64.94c-15.21-0.84-30.41-1.68-45.62-2.52C395.31,674.42,387.41,675.86,387.44,679.44z" />
+                <path class="coop-map1-contours" style="fill:none;" d="M420.41,796.86c-0.4,2.96-0.94,6.8-0.79,9.79c7.83,0.29,23.86,0.89,23.99,0.77
+				c0.12-0.11,0.91-10.01,0.75-10.19C444.19,797.03,420.41,796.86,420.41,796.86z" />
+                <path class="coop-map1-contours" style="fill:none;" d="M391.06,807.43c0.18-0.17,0.18-11.75,0.01-11.91c-0.16-0.15-19.22-0.13-19.56,0.33
+				c-0.22,0.29-0.57,7.17-0.73,10.22C370.78,806.07,390.89,807.59,391.06,807.43z" />
+                <path class="coop-map1-contours" style="fill:none;" d="M330.8,548.04c5.73,3.43,11.65,6.53,17.73,9.3c3.01-7.92,6.1-15.81,9.28-23.66
+				c4.28-10.58,9-21.51,17.67-28.94c6.02,4.36,12.76,7.71,19.87,9.89c-5.66,18.66-16.46,35.29-24.18,53.19
+				c-9.57,22.19-14.42,46.37-25.98,67.59c-0.73-3.94-1.48-7.95-3.38-11.47s-5.16-6.55-9.13-7.13c-1.06-0.15-2.22-0.16-3.08-0.79
+				c-1.06-0.79-1.3-2.25-1.45-3.56c-2.43-21.15-1.25-42.46,1.27-63.6L330.8,548.04z" />
+                <path class="coop-map1-contours" style="fill:none;"
+                    d="M379.91,615.89c5.6-0.2,11.21-0.06,16.79,0.44c1.06-3.11-0.71-6.66-3.43-8.5
+				c-2.72-1.84-6.15-2.28-9.43-2.24c-2.02,0.02-4.1,0.22-5.91,1.12c-1.81,0.9-3.32,2.64-3.46,4.66c-0.14,2.02,1.43,4.14,3.46,4.18" />
+                <path class="coop-map1-contours" style="fill:none;" d="M382.91,634.32c2.72,0.03,5.45,0.07,8.17,0.1c0.96,0.01,2.01-0.01,2.72-0.65
+				c0.66-0.6,0.82-1.55,0.94-2.43c0.22-1.58,0.43-3.22-0.03-4.75c-0.45-1.53-1.76-2.93-3.35-2.95c-3.15-0.05-4.06,4.42-6.65,6.22
+				c-0.98,0.68-2.25,1-2.95,1.96c-0.7,0.96,0.06,2.83,1.16,2.38" />
+                <path class="coop-map1-contours" style="fill:none;" d="M408.37,655.91c-0.83-16.47-2.21-32.91-4.14-49.29c-0.57-4.88-1.49-10.29-5.38-13.3
+				c-4.37-3.37-10.72-2.28-15.71,0.06c-4.99,2.34-9.58,5.79-14.98,6.89c2.43-8.15,6.98-15.66,13.07-21.6
+				c23.86,3.5,47.71,7,71.57,10.5c-4.19,22.59,2.06,46.18-2.36,68.72c-14.13,1.65-28.49,1.28-42.52-1.1" />
+                <path class="coop-map1-contours" style="fill:none;" d="M388.99,570.75c6.06-20.31,16.4-39.04,26.67-57.58c4.52-8.16,9.04-16.33,13.56-24.49
+				c1.32-2.38,2.84-4.95,5.39-5.91c3.1-1.17,6.49,0.46,9.46,1.93c13.2,6.53,27.53,10.77,42.16,12.47c1.09,0.13,2.27,0.28,3.06,1.05
+				c1.38,1.35,0.74,3.66,0.01,5.45c-10.56,25.88-21.12,51.76-31.68,77.65c-0.39,0.95-0.84,1.98-1.74,2.48
+				c-0.84,0.46-1.87,0.35-2.83,0.22c-21.13-2.9-42.02-7.57-62.37-13.93" />
+                <path class="coop-map1-contours" style="fill:none;" d="M-16.09,363.42c19.16,0.38,38.23,4.63,55.73,12.43c12.8,5.71,24.84,13.3,38.27,17.33
+				c13.43,4.02,29.19,3.87,40.11-4.92c7.53-6.06,11.67-15.24,16.67-23.52c13.93-23.07,36.45-40.81,62.14-48.96
+				c4.96-1.57,10.21-2.81,15.33-1.92c10.81,1.88,17.68,12.26,23.47,21.58c14.26,22.97,29.79,45.14,46.49,66.4
+				c2.97,3.77,6.08,7.61,10.28,9.95c4.47,2.48,9.78,3.02,14.89,2.83c28.12-1.05,53.51-22.05,81.52-19.35
+				c7.46,0.72,14.77,3.13,22.26,2.89c11.67-0.38,22.04-7.04,32.37-12.48c18.2-9.58,38.14-15.85,58.54-18.44" />
+                <path class="coop-map1-contours" style="fill:none;" d="M633.87,659.04c11.28-1.01,22.79,6.32,26.65,16.96c5.33-0.44,6.4-7.66,6.41-13.01
+				c0.04-27.59,12.94-54.9,34.22-72.47c2.45-2.02,5.23-4,8.4-4.07c2.51-0.05,4.87,1.11,7.12,2.24c7.88,3.98,15.75,7.95,23.63,11.93
+				c4.14,2.09,8.93,5.26,8.55,9.88c-0.31,3.8-4.01,6.25-7.21,8.32c-6.05,3.92-11.66,8.53-16.67,13.72c-2.58,2.67-5.1,5.7-5.68,9.37
+				s1.59,8,5.27,8.47c2.12,0.27,4.17-0.73,6.08-1.7c14.8-7.55,30.05-14.98,46.52-17.24s34.6,1.46,46.08,13.48
+				c0.63,0.66,1.27,1.44,1.24,2.34c-0.03,0.87-0.67,1.57-1.28,2.19c-17.24,17.25-42.55,23.34-62.86,36.84
+				c-17.96,11.93-31.52,29.33-43.86,47.01c-4.39,6.29-8.88,13.58-7.37,21.1c1.16,5.77,5.64,10.25,10.17,14.02
+				c7.91,6.59,17.75,12.44,27.91,10.76c11.13-1.84,18.84-12.11,23.62-22.33c4.78-10.22,8.05-21.51,15.74-29.77
+				s21.99-11.99,30.07-4.11c5.13,5,6.07,12.87,5.86,20.03c-0.69,23.75-10.53,46.16-20.2,67.86c-8.86,19.88-17.72,39.76-26.57,59.64
+				c-4.21,9.45-8.46,20.2-4.59,29.79" />
+                <path class="coop-map1-contours" style="fill:none;" d="M838.12,872.42c-1.02-10.3-1.55-20.65-1.58-30.99c-0.01-3.47,0.06-7.07,1.52-10.22
+				c1.48-3.19,4.23-5.58,6.65-8.14c12.91-13.63,17.3-33.1,19.81-51.71c2.99-22.12,4.07-44.5,3.23-66.8
+				c-0.15-4.08-0.26-8.55,2.25-11.77c4.39-5.63,13.26-3.77,19.79-0.89c10.88,4.79,21.17,10.91,30.57,18.19" />
+                <path class="coop-map1-contours" style="fill:none;"
+                    d="M294.91,591.31c1.39-5.21,2.07-10.6,2.02-15.99c-0.03-3.19-0.3-6.45,0.64-9.5
+				c1.28-4.15,4.77-8.29,3.06-12.29c-1.54-3.6-6.25-4.34-10.16-4.3c-1.97,0.02-4.01,0.13-5.77,1c-2.62,1.3-4.23,4.13-4.72,7.01
+				c-0.49,2.88-0.02,5.84,0.59,8.7c1.57,7.38,4.07,14.56,7.41,21.32c0.68,1.38,1.43,2.79,2.6,3.79c1.17,1.01,2.87,1.54,4.3,0.94" />
+                <path class="coop-map1-contours" style="fill:none;" d="M211.4,558.89c3.56,0.17,7.17-0.68,10.28-2.44c0.76-0.43,1.52-0.94,1.99-1.68
+				c1.06-1.68,0.29-3.86-0.46-5.7c-9.36-23.19-10.95-49.44-4.46-73.6c-7.3,3.24-15.42,4.62-23.38,3.96
+				C195.71,504.43,211.4,558.89,211.4,558.89z" />
+                <path class="coop-map1-contours" style="fill:none;" d="M251.15,712.4c1.35,3.6,4.23,6.37,6.34,9.58c2.17,3.31,3.52,7.07,4.85,10.8
+				c0.34-5.61,0.68-11.22,1.02-16.83c0.02-0.35,0.03-0.73-0.17-1.02c-0.22-0.31-0.62-0.41-0.99-0.49
+				c-3.74-0.81-7.47-1.63-11.21-2.44" />
+                <path class="coop-map1-contours" style="fill:none;" d="M298.28,752.22c-0.3,2.3,0.17,4.63,0.74,6.88c0.46,1.8,1.57,4.39,3.39,4.75
+				c2.36,0.46,3.71-2.79,4.33-5.11c0.79-2.95,1.16-6.34-0.6-8.83c-1.08-1.53-2.9-2.51-4.77-2.55
+				C299.32,748.04,298.33,749.7,298.28,752.22z" />
+                <path class="coop-map1-contours" style="fill:none;" d="M225.86,719.52c1.56-1.82,3.37-3.77,5.76-3.99c3.24-0.3,5.79,2.68,7.4,5.51
+				c7.17,12.58,8.52,28.15,17.23,39.72c1.41,1.87,3.1,4.01,2.56,6.29c-6.14-9.38-12.27-18.75-18.41-28.13
+				c-4.26-6.5-8.79-13.27-15.62-16.97L225.86,719.52z" />
+                <path class="coop-map1-contours" style="fill:none;" d="M-8.94,522.91c6.19-2.7,13.3,3.65,13.9,10.38c0.6,6.72-3.15,13.01-7.05,18.52
+				c-1.07,1.5-2.21,3.17-2.02,5.01c0.16,1.54,1.22,2.82,2.24,3.99c7.52,8.62,15.04,17.23,22.55,25.85c1.83,2.1,3.73,4.25,6.21,5.52
+				c4.06,2.08,8.92,1.46,13.43,2.15c15.45,2.36,23.88,18.89,29.6,33.43c6.08,15.42,11.99,32.36,7.18,48.22
+				c-2.89,9.53-9.35,17.48-15.31,25.45c-12.27,16.4-23,33.94-32.01,52.34c-2.72,5.56-4.88,13.25-0.05,17.12
+				c4.08,3.27,10.57,0.86,13.55-3.43c2.99-4.29,3.53-9.76,4.38-14.92c3.98-24.27,16.95-46.97,35.83-62.73
+				c3.08-2.57,6.74-5.09,10.74-4.68c5.19,0.53,8.54,5.69,10.55,10.5c6.53,15.63,7.12,33.66,1.64,49.69
+				c-1.5,4.37-3.49,8.68-6.72,11.98c-3.84,3.9-9.06,6.04-14.08,8.22c-18.09,7.85-35.63,17.67-49.55,31.64s-23.98,32.48-24.9,52.17
+				c-0.26,5.68,0.33,11.69,3.51,16.4c2,2.96,4.88,5.21,7.82,7.23c29.87,20.59,68.87,22.74,104.83,17.96
+				c35.96-4.78,71.01-15.71,107.16-18.71c8.29-0.69,16.74-0.98,24.62-3.64c12.11-4.09,21.71-13.38,29.96-23.15
+				c5.7-6.75,11-16.9,5.37-23.7c-3.44-4.15-9.52-4.83-14.89-4.49c-21.95,1.37-42.62,14.23-64.51,12.15
+				c-3.64-0.35-7.37-1.17-10.25-3.42c-3.61-2.81-5.32-7.4-6.41-11.85c-5.31-21.64,0.73-45.74,15.62-62.32
+				c-21.21-1.79-45.8-6.52-55.39-25.53c-8.42-16.69-1.19-36.86-3.59-55.4c-2.95-22.84-19.96-40.87-34.72-58.54
+				s-28.76-39.65-24.04-62.19c0.64-3.08,1.64-6.23,1.01-9.31c-1.26-6.17-8.05-9.16-13.66-12.02c-13.15-6.7-23.99-17.84-30.33-31.17
+				c-0.28,12.01-0.56,24.02-0.84,36.03c-0.08,3.6-0.34,7.61-2.95,10.1c-3.84,3.65-10.69,1.5-13.65-2.9s-3.12-10.03-3.13-15.33
+				c-0.03-18.3,0.53-36.6,1.66-54.86c5.67-2.38,11.85,2.17,15.53,7.09c3.68,4.92,6.86,10.89,12.63,13.03
+				c8.84,3.28,18.68-5.62,19-15.04c0.32-9.42-6.23-17.86-14.01-23.19c-9.03-6.18-23.77-7.97-29.05,1.62
+				c-1.35,2.46-2.33,5.79-5.1,6.29c-1.55,0.28-3.07-0.52-4.41-1.34c-10.63-6.49-19.46-15.91-25.24-26.94
+				c-3.95-7.54-7.03-16.4-14.49-20.49" />
+                <path class="coop-map1-contours" style="fill:none;" d="M221.41,447.86c3.39-0.64,6.26,3.63,6.57,7.06c-3.03-0.22-6.17-0.43-9.01,0.64
+				c-2.84,1.07-5.29,3.8-5.02,6.83c-14.21-0.5-28.43-0.99-42.64-1.49c-2.14-0.07-4.38-0.18-6.21-1.29c-4.79-2.92-4.63-11.32-9.99-13
+				c17.23-19.89,32.02-41.91,43.92-65.38c4.06-8.02,7.84-16.27,13.35-23.36c6.91-8.88,16.23-15.53,25.41-22.04
+				c3.67,37.12-17.88,72.31-19.86,109.56c-0.08,1.42,0.71,3.47,2.01,2.91L221.41,447.86z" />
+                <path class="coop-map1-contours" style="fill:none;"
+                    d="M145.41,476.86c-4,11-5.05,23.04-4.19,34.78c1.66,22.45,5.45,44.92,13.26,66.03
+				c1.92,5.2,3.92,5.2,4.11,1.02c1.06-24.03-5.32-47.84-10.22-71.4c-0.35-1.68-0.73-3.42-1.8-4.76c-1.07-1.34-3.03-2.13-4.54-1.33" />
+                <path class="coop-map1-contours" style="fill:none;"
+                    d="M146.41,502.86c4.78,0.31,10.75-0.28,15.51-0.78" />
+                <path class="coop-map1-contours" style="fill:none;" d="M151.58,517.05c2.89-0.14,5.79-0.1,8.68,0.11" />
+                <path class="coop-map1-contours" style="fill:none;" d="M153.89,530.83c2.45,0.31,4.9,0.61,7.34,0.92" />
+                <path class="coop-map1-contours" style="fill:none;" d="M156.41,543.86c2.48,0.14,6.11,0.11,8.59,0.24" />
+                <path class="coop-map1-contours" style="fill:none;" d="M158.41,557.86c4.22-0.11,6.61-0.31,10.83-0.42" />
+                <path class="coop-map1-contours" style="fill:none;" d="M159.41,571.86c3,0.24,6.83,0.28,9.83,0.13" />
+                <path class="coop-map1-contours" style="fill:none;" d="M156.41,580.86c4.96-1.17,11.44-1.41,16.4-2.59c0.89-2.48,1.85-4.93,2.9-7.35
+				c1.19-2.76,2.51-5.5,4.38-7.85c2.78-3.5,6.74-6.09,8.77-10.07" />
+                <path class="coop-map1-contours" style="fill:none;"
+                    d="M171.41,578.86c5.52-2.46,11.84-3.72,17.83-4.56" />
+                <path class="coop-map1-contours" style="fill:none;" d="M107.49,537.07c-0.8-1.35-3.11-1.34-3.9,0.01c-0.35,0.6-0.41,1.33-0.4,2.02
+				c0.03,1.76,0.92,3.91,2.68,3.94c1.15,0.02,2.12-1,2.37-2.12s-0.08-2.29-0.57-3.33" />
+                <path class="coop-map1-contours" style="fill:none;"
+                    d="M239.43,453.9c20.34,5.65,42.15-0.01,63.06,2.91c9.04,1.26,18.85,4,26.84-0.43" />
+                <path class="coop-map1-contours" style="fill:none;" d="M239.9,460.98c10,0.38,20.01,0.75,30.01,1.13" />
+                <path class="coop-map1-contours" style="fill:none;"
+                    d="M280.44,459.64c13.47,2.02,26.94,4.05,40.41,6.07" />
+                <path class="coop-map1-contours" style="fill:none;" d="M351.43,429.5c8.67-0.38,17.98-0.59,25.24,4.17c2.07,1.36,3.92,3.09,6.17,4.11
+				c4.84,2.19,10.43,0.7,15.65-0.28c7.38-1.38,14.98-1.66,22.44-0.8" />
+                <path class="coop-map1-contours" style="fill:none;" d="M184.9,656.94c1.06-0.17,2.12-0.35,3.18-0.52c0.29-0.05,0.6-0.11,0.81-0.32
+				c0.31-0.32,0.23-0.84,0.13-1.28c-0.41-1.86-0.83-3.72-1.24-5.58c-0.24-1.08-0.5-2.21-1.18-3.09c-0.8-1.04-2.16-1.62-3.46-1.48
+				c-0.2,0.02-0.42,0.07-0.56,0.21c-0.16,0.16-0.2,0.4-0.23,0.62c-0.5,4.12-0.08,8.35,1.21,12.29" />
+                <path class="coop-map1-contours" style="fill:none;" d="M192.1,663.34c0.03-1.51-2.34-2-3.41-0.93s-1.1,2.78-0.95,4.28c0.55,5.53,2.5,10.81,4.43,16.02
+				c2.93,7.9,5.85,15.8,8.78,23.7c0.49,1.32,1.03,2.71,2.16,3.55c1.13,0.84,3.03,0.78,3.67-0.47c-2.41-11.25-5.69-22.3-9.8-33.04
+				c-1.64-4.28-3.42-8.55-4.23-13.06" />
+                <path class="coop-map1-contours" style="fill:none;"
+                    d="M69.41,431.86c-4.56-1.89-8.07,3.89-7.63,8.81c0.44,4.92,5.04,8.69,9.88,9.66
+				c4.84,0.97,9.84-0.28,14.53-1.84c1.37-0.46,3.12-0.85,4.08,0.24c0.55,0.63,0.61,1.54,0.63,2.38c0.1,3.32-0.48,13.75,1.52,14.75
+				c2.36,1.18,4.69-1.2,6.61-3.01c8.92-8.37,17.34-17.28,25.18-26.67c4.43-5.31,8.7-10.78,13.69-15.56
+				c4.38-4.2,9.27-7.82,13.68-11.98c13.12-12.37,21.67-29.5,23.67-47.42c-10.58,10.04-21.48,19.74-32.7,29.06
+				c-7.54,6.27-15.28,12.42-24,16.92c-9.59,4.94-20.34,7.88-28.84,14.53c-5.58,4.37-10.79,10.55-17.88,10.63L69.41,431.86z" />
+                <path class="coop-map1-contours" style="fill:none;" d="M308.75,303.14c14.18-9.97,30.77-15.84,47.12-21.59c7.97-2.8,16.15-5.64,24.6-5.54
+				c4.71,0.06,9.51,1.1,13.44,3.68c4.01,2.64,6.88,6.69,9.31,10.83c15.77,26.89,16.67,59.65,17.14,90.81
+				c0.04,2.43-0.07,5.19-1.9,6.78c-1.47,1.28-3.59,1.38-5.54,1.41c-18.97,0.33-37.94,0.65-56.91,0.98
+				c-1.41,0.02-2.87,0.04-4.18-0.49c-2.88-1.17-4.13-4.48-5.11-7.43c-7.35-22.04-17.61-42.97-27.84-63.82
+				c-2.6-5.3-5.32-10.76-9.77-14.64" />
+                <path class="coop-map1-contours" style="fill:none;" d="M465.91,466.32c4.36,0.23,8.73,0.05,13.05-0.55c-0.38-6.27-0.76-12.53-1.14-18.8
+				c-2.68-0.64-5.47-0.8-8.21-0.47c-1.03,0.12-2.12,0.36-2.83,1.11c-0.84,0.9-0.89,2.25-0.89,3.47c-0.01,5.11-0.01,10.22-0.02,15.33
+				" />
+                <path class="coop-map1-contours" style="fill:none;"
+                    d="M135.23,472.81c-6.12,21.57-4.71,44.61-0.53,66.64s11.04,43.45,15.81,65.35
+				c2.52,11.57,4.5,23.38,9.22,34.25c4.18,9.63,10.41,18.25,14.87,27.75c3.93,8.37,6.46,17.38,7.45,26.57
+				c-9.81-17.97-19.63-35.98-27.91-54.71c-21.24-48.05-32.06-101.23-27.07-153.53c0.6-6.27,2.42-13.79,8.44-15.64L135.23,472.81z" />
+                <path class="coop-map1-contours" style="fill:none;" d="M345.41,635.86c-7.09,44.65,2.21,90.72-1.09,135.8c-0.62,8.44-1.97,17.59-8.09,23.44
+				c-5.64,5.39-14.04,6.64-21.83,6.57c-26.86-0.27-53.25-14.03-68.85-35.9c-9.58-13.44-15.87-30.24-29.97-38.82
+				c-13.94-8.48-33.88-7.73-43.4-20.99c-4.14-5.76-5.32-13.05-6.63-20.02c-3.21-17.01-9.95-33.85-17.87-49.24
+				c-5.67-11.03-10.92-21.22-16.05-32.51c-4.88-10.75-7.74-22.28-10.57-33.74c-7.26-29.38-14.49-60.57-5.38-89.43
+				c1.76-5.58,4.19-11.08,8.15-15.39c7.61-8.27,23.13-11.38,31.59-18.77" />
+                <path class="coop-map1-contours" style="fill:none;" d="M280.76,286.63c0.29,0.57,0.64,1.2,1.25,1.41c0.55,0.19,1.14-0.01,1.69-0.21
+				c16.81-6.12,33.63-12.24,50.44-18.37c-6.25-19.99-13.55-39.64-21.87-58.86l-3.7-8.21c-2.19-6.21-3.45-12.76-3.71-19.34
+				c55.41-26.24,111-52.08,166.78-77.51c2.47-1.13,5.08-2.38,6.48-4.7c0.92-1.52,1.2-3.33,1.46-5.09
+				c1.99-13.31,2.83-19.61,4.82-32.91c-110.15,11.44-220.97-7.24-330.44,9.49c-27.12,4.15-53.94,10.02-80.74,15.88
+				c-23.73,5.2-47.47,10.39-71.2,15.59c-2.4,0.52-5.01,1.19-6.44,3.18c-1.18,1.65-1.25,3.81-1.27,5.83
+				c-0.25,25.36,0.8,50.74,3.14,75.99c53.82-29.54,112.01-50.12,169.9-70.57c12.88-4.55,25.8-9.11,39.19-11.8
+				c14.33,38.81,30.52,78.59,44.85,117.4C251.41,223.86,269.8,265.21,280.76,286.63z" />
+                <path class="coop-map1-contours" style="fill:none;" d="M102.3,213.24c-9.36,4.04-20.67-1.05-26.86-9.15c-6.18-8.1-8.38-18.49-10.1-28.53
+				c-0.32-1.86-0.57-3.98,0.62-5.45c1.01-1.25,2.74-1.6,4.33-1.89c22.9-4.15,45.21-11.57,66.03-21.96
+				c18.82-9.39,37.33-21.47,58.32-22.7c2.62-0.15,5.42-0.09,7.63,1.32c2.01,1.28,3.41,3.38,4.36,5.57
+				c23.19,53.34,45.64,107.49,68.68,160.87c0.53,1.23,0.82,2.69,0.31,3.93c-0.47,1.14-1.61,1.84-2.69,2.44
+				c-8.45,4.73-17.57,8.27-27.01,10.46c-1.9,0.44-3.92,0.82-5.75,0.15c-1.77-0.65-3.05-2.17-4.24-3.63
+				c-18.88-23.11-35.33-47.06-48.53-73.82c-6.05-12.26-13.41-24.53-19.04-36.99c-1.09-2.41-2.31-4.93-4.48-6.45
+				c-2.95-2.07-6.88-1.8-10.46-1.44c-8.38,0.83-17.27,1.86-23.85,7.12c-2.68,8.33-2.61,17.68-0.67,27.74
+				c4.59,10.75,8.14,21.95,10.59,33.38c0.55,2.57,1.05,5.21,0.65,7.81c-0.57,3.75-2.95,7-5.76,9.55
+				c-6.65,6.06-15.58,8.82-24.2,11.41c-6.21,1.86-12.41,3.72-18.62,5.58c-1.14,0.34-2.39,0.76-2.99,1.79
+				c-0.72,1.23-0.23,2.77,0.28,4.1c3.87,10.18,7.73,20.37,11.6,30.55c2.33-4.61,4.66-9.22,6.99-13.83
+				c2.36-4.66,4.72-9.34,7.76-13.59c6.17-8.65,14.82-15.17,23.41-21.42c10.8-7.87,22.18-15.75,35.31-18.24
+				c13.13-2.49,25.06,1.19,31.47,12.91c-9.61-2.59-16.59,0.12-25.47,4.61s-16.38,11.29-23.19,18.55
+				c-4.59,4.9-8.97,10.12-11.86,16.19c-2.23,4.69-3.51,9.76-5.05,14.73c-2.81,9.09-6.51,17.9-11.03,26.27
+				c-4.14,7.67-9.17,15.18-16.44,19.98c-7.27,4.8-17.23,6.36-24.72,1.9c-4.16-2.48-7.16-6.49-9.88-10.5
+				c-15.49-22.78-25.94-48.97-30.39-76.15c-0.94-5.74-1.59-11.77,0.32-17.26c2.64-7.58,9.74-12.8,17.19-15.8
+				c12.04-4.86,25.9-5.02,38.04-0.45c1.96,0.74,5.57,1.81,7.48,0.95c3.14-1.42,1.42-6.13,0.59-9.48L102.3,213.24z" />
+                <path class="coop-map1-contours" style="fill:none;" d="M-1.72,292.34c-1.88-0.76-0.81-3.61,0.53-5.13c18.37-20.71,42.24-36.5,68.49-45.3
+				c2.51-0.84,5.14-1.67,7.07-3.49c5.78-5.44,1.46-15.65-5.18-20c-6.64-4.35-14.98-5.71-21.31-10.49
+				c-4.58-3.47-7.78-8.49-12.26-12.09c-12-9.63-29.65-6.72-44.05-1.28" />
+            </svg>
+            <svg class="desktop-ilu" id="coop-map2" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 926.31 931.41" style="enable-background:new 0 0 926.31 931.41;" xml:space="preserve">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <path style="fill:#EEB873;" d="M448.41,665.39c-26.44-1.42-52.96-1.29-79.39,0.39c-2.04,25.53-3.12,51.14-3.24,76.76
+				c-0.04,7.73,0.01,15.47-0.54,23.18c-1.33,18.65-6.15,37.37-3.12,55.83c29.61,1.75,59.24,3.05,88.89,3.9
+				c2.88-37.62,3.99-75.37,3.34-113.09c-0.27-15.49-0.87-31.2-5.62-45.94" />
+
+
+                <path style="fill:#9DAE82;" d="M508.86,137.14c0.48-12.18,1.08-24.83,6.74-35.63c1.54-2.94,3.48-5.74,6.13-7.75
+				c2.61-1.98,5.76-3.09,8.85-4.16c16.6-5.78,33.41-11.61,50.91-13.22c10.95-1.01,22.09-0.37,32.86-2.61
+				c6.53-1.36,12.79-3.77,19.22-5.55c17.87-4.97,36.68-5.1,55.23-5.2c9.68-0.05,19.46-0.09,28.93,1.94
+				c8.79,1.89,17.1,5.52,25.2,9.43c21.92,10.57,43.18,23.68,58.75,42.38c8.17,9.82,15.15,21.46,26.63,27.05
+				c6.16,2.99,13.27,4.03,18.85,8.01c8.55,6.1,11.29,17.36,13.42,27.65c2.43,11.76,7.42,20.64,9.85,32.4l0.89,7.5
+				c0.06,23.68-17.59,43.01-30.2,63.05c-10.63,16.89-18.06,35.56-25.44,54.1c-3.18,7.99-6.38,16.08-7.55,24.6
+				c-3.9,28.51,15.46,56.53,11.07,84.97c-2.74,17.76-14.82,33.25-30.14,42.64c-15.32,9.39-33.57,13.15-51.53,13.48
+				c-14.48,0.26-29.59-1.5-42.93,4.14c-11.45,4.84-20.08,14.56-27.41,24.61c-12.38,16.96-22.26,35.75-29.21,55.56
+				c-8.46,24.1-12.74,49.97-25.7,71.98c-2.63,4.47-5.81,8.92-10.47,11.2c-4.07,1.99-8.78,2.06-13.31,2.07
+				c-28.23,0.03-56.47-1.32-84.57-4.02c-5.42-0.52-11.03-1.16-15.67-3.99c-8.54-5.21-11.39-16.25-11.91-26.24
+				c-1.46-28.23,9.62-55.64,23.37-80.34c7.33-13.16,15.55-26.03,19.91-40.45c3.73-12.32,4.49-25.33,4.68-38.19
+				c1.21-84.01-21.23-167.21-17.97-251.17C506.3,227.35,507.78,164.37,508.86,137.14z" />
+
+
+                <path style="fill:#FCA391;" d="M236.13,336.52c5.94-4.66,12.8-7.99,19.59-11.28c16.31-7.9,32.63-15.81,48.94-23.71
+				c1.32,4.78,0.68,9.86-0.01,14.78c-3.87,27.71-8.69,55.29-14.45,82.67c-0.84,3.99-1.53,8.67,1.22,11.69
+				c1.04,1.15,2.47,1.88,3.91,2.45c8.23,3.23,18.41,1.13,26.96-1.12c8.12-2.13,16.32-5.97,24.92-8.07c0.96-0.23,2.03-0.42,2.87,0.09
+				c0.96,0.58,1.23,1.83,1.38,2.94c1.17,8.74-0.61,16.73-3.27,25.14c-1.19,3.77-2.87,7.57-5.91,10.08
+				c-2.68,2.22-6.15,3.21-9.56,3.89c-13.42,2.67-27.29,1.29-40.9-0.09c-11.27-1.15-22.55-2.3-33.82-3.45
+				c-3.52-0.36-7.24-0.8-10.04-2.95c-3.13-2.42-4.46-6.48-5.23-10.36c-1.37-6.86-1.55-13.88-1.74-20.87
+				c-0.65-24.8-1.29-49.6-1.94-74.4" />
+
+
+                <path style="fill:#9DAE82;" d="M146.41,322.88c-1.58,6.52,1.99,13.32,6.87,17.92s10.99,7.65,16.44,11.56s10.51,9.17,11.62,15.78
+				c0.51,3.03,0.14,6.13,0.35,9.19c0.07,1.11,0.45,2.47,1.54,2.66c0.63,0.11,1.24-0.23,1.77-0.59
+				c15.72-10.45,16.4-35.92,32.99-44.93c2.57-1.39,5.42-2.31,7.71-4.13c6.75-5.36,5.89-15.86,3.01-23.98
+				c-2.99-8.43-7.46-16.33-13.16-23.22c-3.55-4.31-8.09-8.47-13.66-8.85c-4.83-0.33-9.33,2.26-13.48,4.76
+				c-8.97,5.41-18.01,10.86-25.73,17.95s-14.11,16-16.46,26.21" />
+
+
+                <path style="fill:#FCA391;" d="M329.41,547.86c3.02-28.87,6.08-57.28,9.94-86.05c0.22-1.64,0.47-3.35,1.4-4.72
+				c0.86-1.27,2.22-2.1,3.6-2.77c11.19-5.44,24.38-2,36.68-0.18c9.55,1.41,19.26,1.76,28.89,1.04c2.65-0.2,5.51-0.43,7.78,0.95
+				c2.58,1.58,3.65,4.91,3.38,7.92s-1.64,5.8-2.99,8.51c-7.2,14.47-15.39,28.94-22.59,43.4
+				C369.17,555.29,345.67,583.44,329.41,547.86z" />
+
+
+                <path style="fill:#F6E0D2;" d="M387.44,679.44c-0.31,20.39-0.62,40.77-0.94,61.16c-0.01,0.74,0.01,1.57,0.53,2.1
+				c0.51,0.52,1.32,0.57,2.05,0.59c15.34,0.36,30.69,0.72,46.03,1.08c0.78,0.02,1.65,0,2.22-0.53c0.52-0.49,0.63-1.26,0.7-1.96
+				c2.32-21.56,3.29-43.26,2.9-64.94c-15.21-0.84-30.41-1.68-45.62-2.52C395.31,674.42,387.41,675.86,387.44,679.44z" />
+
+
+                <path style="fill:#F6E0D2;" d="M420.41,796.86c-0.4,2.96-0.94,6.8-0.79,9.79c7.83,0.29,23.86,0.89,23.99,0.77
+				c0.12-0.11,0.91-10.01,0.75-10.19C444.19,797.03,420.41,796.86,420.41,796.86z" />
+
+
+                <path style="fill:#F6E0D2;" d="M391.06,807.43c0.18-0.17,0.18-11.75,0.01-11.91c-0.16-0.15-19.22-0.13-19.56,0.33
+				c-0.22,0.29-0.57,7.17-0.73,10.22C370.78,806.07,390.89,807.59,391.06,807.43z" />
+
+
+                <path style="fill:#3E3E3E;" d="M330.8,548.04c5.73,3.43,11.65,6.53,17.73,9.3c3.01-7.92,6.1-15.81,9.28-23.66
+				c4.28-10.58,9-21.51,17.67-28.94c6.02,4.36,12.76,7.71,19.87,9.89c-5.66,18.66-16.46,35.29-24.18,53.19
+				c-9.57,22.19-14.42,46.37-25.98,67.59c-0.73-3.94-1.48-7.95-3.38-11.47s-5.16-6.55-9.13-7.13c-1.06-0.15-2.22-0.16-3.08-0.79
+				c-1.06-0.79-1.3-2.25-1.45-3.56c-2.43-21.15-1.25-42.46,1.27-63.6L330.8,548.04z" />
+
+
+                <path style="fill:#3E3E3E;"
+                    d="M379.91,615.89c5.6-0.2,11.21-0.06,16.79,0.44c1.06-3.11-0.71-6.66-3.43-8.5
+				c-2.72-1.84-6.15-2.28-9.43-2.24c-2.02,0.02-4.1,0.22-5.91,1.12c-1.81,0.9-3.32,2.64-3.46,4.66c-0.14,2.02,1.43,4.14,3.46,4.18" />
+
+
+                <path style="fill:#3E3E3E;" d="M382.91,634.32c2.72,0.03,5.45,0.07,8.17,0.1c0.96,0.01,2.01-0.01,2.72-0.65
+				c0.66-0.6,0.82-1.55,0.94-2.43c0.22-1.58,0.43-3.22-0.03-4.75c-0.45-1.53-1.76-2.93-3.35-2.95c-3.15-0.05-4.06,4.42-6.65,6.22
+				c-0.98,0.68-2.25,1-2.95,1.96c-0.7,0.96,0.06,2.83,1.16,2.38" />
+
+
+                <path style="fill:#EEB873;" d="M408.37,655.91c-0.83-16.47-2.21-32.91-4.14-49.29c-0.57-4.88-1.49-10.29-5.38-13.3
+				c-4.37-3.37-10.72-2.28-15.71,0.06c-4.99,2.34-9.58,5.79-14.98,6.89c2.43-8.15,6.98-15.66,13.07-21.6
+				c23.86,3.5,47.71,7,71.57,10.5c-4.19,22.59,2.06,46.18-2.36,68.72c-14.13,1.65-28.49,1.28-42.52-1.1" />
+
+
+                <path style="fill:#FCA391;" d="M388.99,570.75c6.06-20.31,16.4-39.04,26.67-57.58c4.52-8.16,9.04-16.33,13.56-24.49
+				c1.32-2.38,2.84-4.95,5.39-5.91c3.1-1.17,6.49,0.46,9.46,1.93c13.2,6.53,27.53,10.77,42.16,12.47c1.09,0.13,2.27,0.28,3.06,1.05
+				c1.38,1.35,0.74,3.66,0.01,5.45c-10.56,25.88-21.12,51.76-31.68,77.65c-0.39,0.95-0.84,1.98-1.74,2.48
+				c-0.84,0.46-1.87,0.35-2.83,0.22c-21.13-2.9-42.02-7.57-62.37-13.93" />
+
+
+                <path style="fill:#3E3E3E;"
+                    d="M294.91,591.31c1.39-5.21,2.07-10.6,2.02-15.99c-0.03-3.19-0.3-6.45,0.64-9.5
+				c1.28-4.15,4.77-8.29,3.06-12.29c-1.54-3.6-6.25-4.34-10.16-4.3c-1.97,0.02-4.01,0.13-5.77,1c-2.62,1.3-4.23,4.13-4.72,7.01
+				c-0.49,2.88-0.02,5.84,0.59,8.7c1.57,7.38,4.07,14.56,7.41,21.32c0.68,1.38,1.43,2.79,2.6,3.79c1.17,1.01,2.87,1.54,4.3,0.94" />
+
+
+                <path style="fill:#3E3E3E;" d="M211.4,558.89c3.56,0.17,7.17-0.68,10.28-2.44c0.76-0.43,1.52-0.94,1.99-1.68
+				c1.06-1.68,0.29-3.86-0.46-5.7c-9.36-23.19-10.95-49.44-4.46-73.6c-7.3,3.24-15.42,4.62-23.38,3.96
+				C195.71,504.43,211.4,558.89,211.4,558.89z" />
+
+
+                <path style="fill:#3E3E3E;" d="M251.15,712.4c1.35,3.6,4.23,6.37,6.34,9.58c2.17,3.31,3.52,7.07,4.85,10.8
+				c0.34-5.61,0.68-11.22,1.02-16.83c0.02-0.35,0.03-0.73-0.17-1.02c-0.22-0.31-0.62-0.41-0.99-0.49
+				c-3.74-0.81-7.47-1.63-11.21-2.44" />
+
+
+                <path style="fill:#3E3E3E;" d="M298.28,752.22c-0.3,2.3,0.17,4.63,0.74,6.88c0.46,1.8,1.57,4.39,3.39,4.75
+				c2.36,0.46,3.71-2.79,4.33-5.11c0.79-2.95,1.16-6.34-0.6-8.83c-1.08-1.53-2.9-2.51-4.77-2.55
+				C299.32,748.04,298.33,749.7,298.28,752.22z" />
+
+
+                <path style="fill:#3E3E3E;" d="M225.86,719.52c1.56-1.82,3.37-3.77,5.76-3.99c3.24-0.3,5.79,2.68,7.4,5.51
+				c7.17,12.58,8.52,28.15,17.23,39.72c1.41,1.87,3.1,4.01,2.56,6.29c-6.14-9.38-12.27-18.75-18.41-28.13
+				c-4.26-6.5-8.79-13.27-15.62-16.97L225.86,719.52z" />
+
+
+                <path style="fill:#9DAE82;" d="M-8.94,522.91c6.19-2.7,13.3,3.65,13.9,10.38c0.6,6.72-3.15,13.01-7.05,18.52
+				c-1.07,1.5-2.21,3.17-2.02,5.01c0.16,1.54,1.22,2.82,2.24,3.99c7.52,8.62,15.04,17.23,22.55,25.85c1.83,2.1,3.73,4.25,6.21,5.52
+				c4.06,2.08,8.92,1.46,13.43,2.15c15.45,2.36,23.88,18.89,29.6,33.43c6.08,15.42,11.99,32.36,7.18,48.22
+				c-2.89,9.53-9.35,17.48-15.31,25.45c-12.27,16.4-23,33.94-32.01,52.34c-2.72,5.56-4.88,13.25-0.05,17.12
+				c4.08,3.27,10.57,0.86,13.55-3.43c2.99-4.29,3.53-9.76,4.38-14.92c3.98-24.27,16.95-46.97,35.83-62.73
+				c3.08-2.57,6.74-5.09,10.74-4.68c5.19,0.53,8.54,5.69,10.55,10.5c6.53,15.63,7.12,33.66,1.64,49.69
+				c-1.5,4.37-3.49,8.68-6.72,11.98c-3.84,3.9-9.06,6.04-14.08,8.22c-18.09,7.85-35.63,17.67-49.55,31.64s-23.98,32.48-24.9,52.17
+				c-0.26,5.68,0.33,11.69,3.51,16.4c2,2.96,4.88,5.21,7.82,7.23c29.87,20.59,68.87,22.74,104.83,17.96
+				c35.96-4.78,71.01-15.71,107.16-18.71c8.29-0.69,16.74-0.98,24.62-3.64c12.11-4.09,21.71-13.38,29.96-23.15
+				c5.7-6.75,11-16.9,5.37-23.7c-3.44-4.15-9.52-4.83-14.89-4.49c-21.95,1.37-42.62,14.23-64.51,12.15
+				c-3.64-0.35-7.37-1.17-10.25-3.42c-3.61-2.81-5.32-7.4-6.41-11.85c-5.31-21.64,0.73-45.74,15.62-62.32
+				c-21.21-1.79-45.8-6.52-55.39-25.53c-8.42-16.69-1.19-36.86-3.59-55.4c-2.95-22.84-19.96-40.87-34.72-58.54
+				s-28.76-39.65-24.04-62.19c0.64-3.08,1.64-6.23,1.01-9.31c-1.26-6.17-8.05-9.16-13.66-12.02c-13.15-6.7-23.99-17.84-30.33-31.17
+				c-0.28,12.01-0.56,24.02-0.84,36.03c-0.08,3.6-0.34,7.61-2.95,10.1c-3.84,3.65-10.69,1.5-13.65-2.9s-3.12-10.03-3.13-15.33
+				c-0.03-18.3,0.53-36.6,1.66-54.86c5.67-2.38,11.85,2.17,15.53,7.09c3.68,4.92,6.86,10.89,12.63,13.03
+				c8.84,3.28,18.68-5.62,19-15.04c0.32-9.42-6.23-17.86-14.01-23.19c-9.03-6.18-23.77-7.97-29.05,1.62
+				c-1.35,2.46-2.33,5.79-5.1,6.29c-1.55,0.28-3.07-0.52-4.41-1.34c-10.63-6.49-19.46-15.91-25.24-26.94
+				c-3.95-7.54-7.03-16.4-14.49-20.49" />
+
+
+                <path style="fill:#EEB873;" d="M221.41,447.86c3.39-0.64,6.26,3.63,6.57,7.06c-3.03-0.22-6.17-0.43-9.01,0.64
+				c-2.84,1.07-5.29,3.8-5.02,6.83c-14.21-0.5-28.43-0.99-42.64-1.49c-2.14-0.07-4.38-0.18-6.21-1.29c-4.79-2.92-4.63-11.32-9.99-13
+				c17.23-19.89,32.02-41.91,43.92-65.38c4.06-8.02,7.84-16.27,13.35-23.36c6.91-8.88,16.23-15.53,25.41-22.04
+				c3.67,37.12-17.88,72.31-19.86,109.56c-0.08,1.42,0.71,3.47,2.01,2.91L221.41,447.86z" />
+
+
+                <path style="fill:#3E3E3E;" d="M141.22,511.63c1.66,22.45,5.45,44.92,13.26,66.03c1.92,5.2,3.92,5.2,4.11,1.02
+				c1.06-24.03-5.32-47.84-10.22-71.4c-0.35-1.68-0.73-3.42-1.8-4.76c-1.07-1.34-3.03-2.13-4.54-1.33" />
+
+
+                <path style="fill:none;" d="M146.41,502.86c4.78,0.31,10.75-0.28,15.51-0.78" />
+
+
+                <path style="fill:none;" d="M151.58,517.05c2.89-0.14,5.79-0.1,8.68,0.11" />
+
+
+                <path style="fill:none;" d="M153.89,530.83c2.45,0.31,4.9,0.61,7.34,0.92" />
+
+
+                <path style="fill:none;" d="M156.41,543.86c2.48,0.14,6.11,0.11,8.59,0.24" />
+
+
+                <path style="fill:none;" d="M158.41,557.86c4.22-0.11,6.61-0.31,10.83-0.42" />
+
+
+                <path style="fill:none;" d="M159.41,571.86c3,0.24,6.83,0.28,9.83,0.13" />
+
+
+                <path style="fill:none;" d="M156.41,580.86c4.96-1.17,11.44-1.41,16.4-2.59c0.89-2.48,1.85-4.93,2.9-7.35
+				c1.19-2.76,2.51-5.5,4.38-7.85c2.78-3.5,6.74-6.09,8.77-10.07" />
+
+
+                <path style="fill:none;" d="M171.41,578.86c5.52-2.46,11.84-3.72,17.83-4.56" />
+
+
+                <path style="fill:#3E3E3E;" d="M107.49,537.07c-0.8-1.35-3.11-1.34-3.9,0.01c-0.35,0.6-0.41,1.33-0.4,2.02
+				c0.03,1.76,0.92,3.91,2.68,3.94c1.15,0.02,2.12-1,2.37-2.12s-0.08-2.29-0.57-3.33" />
+
+
+                <path style="fill:#3E3E3E;" d="M184.9,656.94c1.06-0.17,2.12-0.35,3.18-0.52c0.29-0.05,0.6-0.11,0.81-0.32
+				c0.31-0.32,0.23-0.84,0.13-1.28c-0.41-1.86-0.83-3.72-1.24-5.58c-0.24-1.08-0.5-2.21-1.18-3.09c-0.8-1.04-2.16-1.62-3.46-1.48
+				c-0.2,0.02-0.42,0.07-0.56,0.21c-0.16,0.16-0.2,0.4-0.23,0.62c-0.5,4.12-0.08,8.35,1.21,12.29" />
+
+
+                <path style="fill:#3E3E3E;" d="M192.1,663.34c0.03-1.51-2.34-2-3.41-0.93s-1.1,2.78-0.95,4.28c0.55,5.53,2.5,10.81,4.43,16.02
+				c2.93,7.9,5.85,15.8,8.78,23.7c0.49,1.32,1.03,2.71,2.16,3.55c1.13,0.84,3.03,0.78,3.67-0.47c-2.41-11.25-5.69-22.3-9.8-33.04
+				c-1.64-4.28-3.42-8.55-4.23-13.06" />
+
+
+                <path style="fill:#9DAE82;"
+                    d="M69.41,431.86c-4.56-1.89-8.07,3.89-7.63,8.81c0.44,4.92,5.04,8.69,9.88,9.66
+				c4.84,0.97,9.84-0.28,14.53-1.84c1.37-0.46,3.12-0.85,4.08,0.24c0.55,0.63,0.61,1.54,0.63,2.38c0.1,3.32-0.48,13.75,1.52,14.75
+				c2.36,1.18,4.69-1.2,6.61-3.01c8.92-8.37,17.34-17.28,25.18-26.67c4.43-5.31,8.7-10.78,13.69-15.56
+				c4.38-4.2,9.27-7.82,13.68-11.98c13.12-12.37,21.67-29.5,23.67-47.42c-10.58,10.04-21.48,19.74-32.7,29.06
+				c-7.54,6.27-15.28,12.42-24,16.92c-9.59,4.94-20.34,7.88-28.84,14.53c-5.58,4.37-10.79,10.55-17.88,10.63L69.41,431.86z" />
+
+
+                <path style="fill:#EEB873;" d="M308.75,303.14c14.18-9.97,30.77-15.84,47.12-21.59c7.97-2.8,16.15-5.64,24.6-5.54
+				c4.71,0.06,9.51,1.1,13.44,3.68c4.01,2.64,6.88,6.69,9.31,10.83c15.77,26.89,16.67,59.65,17.14,90.81
+				c0.04,2.43-0.07,5.19-1.9,6.78c-1.47,1.28-3.59,1.38-5.54,1.41c-18.97,0.33-37.94,0.65-56.91,0.98
+				c-1.41,0.02-2.87,0.04-4.18-0.49c-2.88-1.17-4.13-4.48-5.11-7.43c-7.35-22.04-17.61-42.97-27.84-63.82
+				c-2.6-5.3-5.32-10.76-9.77-14.64" />
+
+
+                <path style="fill:#3E3E3E;" d="M465.91,466.32c4.36,0.23,8.73,0.05,13.05-0.55c-0.38-6.27-0.76-12.53-1.14-18.8
+				c-2.68-0.64-5.47-0.8-8.21-0.47c-1.03,0.12-2.12,0.36-2.83,1.11c-0.84,0.9-0.89,2.25-0.89,3.47c-0.01,5.11-0.01,10.22-0.02,15.33
+				" />
+
+
+                <path style="fill:#FCA391;"
+                    d="M135.23,472.81c-6.12,21.57-4.71,44.61-0.53,66.64s11.04,43.45,15.81,65.35
+				c2.52,11.57,4.5,23.38,9.22,34.25c4.18,9.63,10.41,18.25,14.87,27.75c3.93,8.37,6.46,17.38,7.45,26.57
+				c-9.81-17.97-19.63-35.98-27.91-54.71c-21.24-48.05-32.06-101.23-27.07-153.53c0.6-6.27,2.42-13.79,8.44-15.64L135.23,472.81z" />
+
+
+                <path style="fill:#9DAE82;" d="M280.76,286.63c0.29,0.57,0.64,1.2,1.25,1.41c0.55,0.19,1.14-0.01,1.69-0.21
+				c16.81-6.12,33.63-12.24,50.44-18.37c-6.25-19.99-13.55-39.64-21.87-58.86l-3.7-8.21c-2.19-6.21-3.45-12.76-3.71-19.34
+				c55.41-26.24,111-52.08,166.78-77.51c2.47-1.13,5.08-2.38,6.48-4.7c0.92-1.52,1.2-3.33,1.46-5.09
+				c1.99-13.31,2.83-19.61,4.82-32.91c-110.15,11.44-220.97-7.24-330.44,9.49c-27.12,4.15-53.94,10.02-80.74,15.88
+				c-23.73,5.2-47.47,10.39-71.2,15.59c-2.4,0.52-5.01,1.19-6.44,3.18c-1.18,1.65-1.25,3.81-1.27,5.83
+				c-0.25,25.36,0.8,50.74,3.14,75.99c53.82-29.54,112.01-50.12,169.9-70.57c12.88-4.55,25.8-9.11,39.19-11.8
+				c14.33,38.81,30.52,78.59,44.85,117.4C251.41,223.86,269.8,265.21,280.76,286.63z" />
+
+
+                <path style="fill:#EEB873;" d="M102.3,213.24c-9.36,4.04-20.67-1.05-26.86-9.15c-6.18-8.1-8.38-18.49-10.1-28.53
+				c-0.32-1.86-0.57-3.98,0.62-5.45c1.01-1.25,2.74-1.6,4.33-1.89c22.9-4.15,45.21-11.57,66.03-21.96
+				c18.82-9.39,37.33-21.47,58.32-22.7c2.62-0.15,5.42-0.09,7.63,1.32c2.01,1.28,3.41,3.38,4.36,5.57
+				c23.19,53.34,45.64,107.49,68.68,160.87c0.53,1.23,0.82,2.69,0.31,3.93c-0.47,1.14-1.61,1.84-2.69,2.44
+				c-8.45,4.73-17.57,8.27-27.01,10.46c-1.9,0.44-3.92,0.82-5.75,0.15c-1.77-0.65-3.05-2.17-4.24-3.63
+				c-18.88-23.11-35.33-47.06-48.53-73.82c-6.05-12.26-13.41-24.53-19.04-36.99c-1.09-2.41-2.31-4.93-4.48-6.45
+				c-2.95-2.07-6.88-1.8-10.46-1.44c-8.38,0.83-17.27,1.86-23.85,7.12c-2.68,8.33-2.61,17.68-0.67,27.74
+				c4.59,10.75,8.14,21.95,10.59,33.38c0.55,2.57,1.05,5.21,0.65,7.81c-0.57,3.75-2.95,7-5.76,9.55
+				c-6.65,6.06-15.58,8.82-24.2,11.41c-6.21,1.86-12.41,3.72-18.62,5.58c-1.14,0.34-2.39,0.76-2.99,1.79
+				c-0.72,1.23-0.23,2.77,0.28,4.1c3.87,10.18,7.73,20.37,11.6,30.55c2.33-4.61,4.66-9.22,6.99-13.83
+				c2.36-4.66,4.72-9.34,7.76-13.59c6.17-8.65,14.82-15.17,23.41-21.42c10.8-7.87,22.18-15.75,35.31-18.24
+				c13.13-2.49,25.06,1.19,31.47,12.91c-9.61-2.59-16.59,0.12-25.47,4.61s-16.38,11.29-23.19,18.55
+				c-4.59,4.9-8.97,10.12-11.86,16.19c-2.23,4.69-3.51,9.76-5.05,14.73c-2.81,9.09-6.51,17.9-11.03,26.27
+				c-4.14,7.67-9.17,15.18-16.44,19.98c-7.27,4.8-17.23,6.36-24.72,1.9c-4.16-2.48-7.16-6.49-9.88-10.5
+				c-15.49-22.78-25.94-48.97-30.39-76.15c-0.94-5.74-1.59-11.77,0.32-17.26c2.64-7.58,9.74-12.8,17.19-15.8
+				c12.04-4.86,25.9-5.02,38.04-0.45c1.96,0.74,5.57,1.81,7.48,0.95c3.14-1.42,1.42-6.13,0.59-9.48L102.3,213.24z" />
+
+
+                <path style="fill:none;" d="M-1.72,292.34c-1.88-0.76-0.81-3.61,0.53-5.13c18.37-20.71,42.24-36.5,68.49-45.3
+				c2.51-0.84,5.14-1.67,7.07-3.49c5.78-5.44,1.46-15.65-5.18-20c-6.64-4.35-14.98-5.71-21.31-10.49
+				c-4.58-3.47-7.78-8.49-12.26-12.09c-12-9.63-29.65-6.72-44.05-1.28" />
+
+
+
+
+
+
+
+
+
+            </svg>
+            <svg class="desktop-ilu" id="coop-map3" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 926.31 931.41" style="enable-background:new 0 0 926.31 931.41;" xml:space="preserve">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <path
+                    d="M481.5,736.8c0.09-3.33-2.07-6.83-5.84-6.2c-3.77,0.64-4.45,5.75-4.71,8.81c-0.31,3.65,0.37,8.66,4.58,9.78
+						c3.44,0.91,5.64-1.97,5.92-5.08c0.13-1.44-2.12-1.43-2.25,0c-0.38,4.26-4.84,3.04-5.79-0.25c-0.45-1.56-0.34-3.27-0.15-4.86
+						c0.15-1.29,0.29-3.03,0.94-4.18c2.27-4,5.14-1.08,5.05,1.97C479.21,738.25,481.46,738.24,481.5,736.8L481.5,736.8z" />
+
+
+
+
+                <path d="M488.96,735.16c-3.05,1.71-4.22,5.84-3.71,9.13c0.54,3.44,3.88,5.18,7.05,3.69c3.34-1.57,3.76-5.55,3.06-8.76
+						c-0.71-3.23-2.86-4.76-6.14-4.17c-1.42,0.26-0.82,2.43,0.6,2.17c4.41-0.8,4.82,7.04,1.6,8.68c-2.57,1.31-4.13-0.94-4.03-3.36
+						c0.08-2.04,0.82-4.38,2.7-5.43C491.36,736.39,490.23,734.45,488.96,735.16z" />
+
+
+
+
+                <path d="M506.43,736.58c-6.82-4.45-12.41,7.19-6.47,11.43C506.36,752.59,512.23,740.29,506.43,736.58
+						c-1.22-0.78-2.35,1.16-1.14,1.94c1.48,0.94,1.32,3.79,0.85,5.27c-0.63,2.02-3.22,3.9-5.13,2.17c-3.19-2.88-0.11-10.3,4.27-7.44
+						C506.51,739.32,507.64,737.37,506.43,736.58z" />
+
+
+
+
+                <path d="M512.11,736.36c-0.28,5.6-0.34,11.19-0.16,16.79c0.05,1.44,2.3,1.45,2.25,0c-0.18-5.6-0.12-11.19,0.16-16.79
+						C514.43,734.91,512.18,734.92,512.11,736.36L512.11,736.36z" />
+
+
+
+
+                <path
+                    d="M514,739.52c0.64-1.11,2.44-0.9,3.49-0.63c1.7,0.44,2.83,1.35,2.69,3.26c-0.12,1.59-0.94,3.74-2.75,3.82
+						c-0.71,0.03-3.08,0.06-3.43-0.7c-0.62-1.31-2.56-0.17-1.94,1.14c0.86,1.82,4.26,1.96,5.95,1.77c2.84-0.31,4.34-3.58,4.44-6.14
+						c0.11-2.81-1.76-4.65-4.36-5.32c-2.09-0.54-4.84-0.41-6.03,1.67C511.33,739.64,513.28,740.78,514,739.52L514,739.52z" />
+
+
+
+
+                <path d="M526.32,743.82c2.27,0.23,4.43,0.07,6.65-0.44c0.35-0.08,0.72-0.42,0.79-0.79c0.43-2.53,0.66-5.94-2.19-7.19
+						c-2.94-1.3-5.21,1.52-5.88,4.06c-0.79,2.98-1.24,6.82,1.02,9.29c2.43,2.65,5.59,1.4,8.14-0.37c1.18-0.82,0.06-2.77-1.14-1.94
+						c-1.44,1-3.38,2.55-5.18,0.98c-1.13-0.98-1.23-2.59-1.2-3.95c0.03-1.21,0.21-2.67,0.64-3.83c0.59-2.42,1.87-2.41,3.87,0.01
+						c0.02,0.79-0.06,1.58-0.24,2.36c0.26-0.26,0.52-0.52,0.79-0.79c-2.03,0.47-3.98,0.57-6.05,0.36
+						C524.88,741.42,524.89,743.67,526.32,743.82L526.32,743.82z" />
+
+
+
+
+                <path d="M537.16,738.1c0.22,3.25,0.44,6.5,0.66,9.74c0.1,1.43,2.23,1.46,2.25,0c0.04-3.65,0.23-8.75,4.63-9.79
+						c1.41-0.33,0.81-2.5-0.6-2.17c-5.46,1.29-6.23,7.24-6.28,11.96c0.75,0,1.5,0,2.25,0c-0.22-3.25-0.44-6.5-0.66-9.74
+						C539.31,736.66,537.06,736.65,537.16,738.1L537.16,738.1z" />
+
+
+
+
+                <path d="M547.55,731.21c-0.27,6.02-0.54,12.05-0.8,18.07c-0.06,1.45,2.19,1.44,2.25,0c0.27-6.02,0.54-12.05,0.8-18.07
+						C549.87,729.76,547.62,729.76,547.55,731.21L547.55,731.21z" />
+
+
+
+
+                <path d="M553.9,738.18c-0.75,3.68-0.97,7.36-0.63,11.09c0.13,1.43,2.38,1.44,2.25,0c-0.32-3.54-0.16-7.01,0.55-10.5
+						C556.35,737.36,554.19,736.76,553.9,738.18L553.9,738.18z" />
+
+
+
+
+                <path d="M556.04,734.64c1-1.01,2-2.02,3-3.02c1.02-1.03-0.57-2.62-1.59-1.59c-1,1.01-2,2.02-3,3.02
+						C553.43,734.08,555.02,735.67,556.04,734.64L556.04,734.64z" />
+
+
+
+
+                <path d="M559.95,736.36c-0.41,3.84-0.43,7.67-0.06,11.52c0.14,1.43,2.16,1.46,2.25,0c0.12-2.04,1.36-9.6,4.21-9
+						c1.19,0.25,1.01,0.5,1.12,1.58c0.09,0.87,0.1,1.77,0.14,2.65c0.1,1.77,0.19,3.53,0.29,5.3c0.08,1.44,2.33,1.45,2.25,0
+						c-0.16-2.98-0.03-6.17-0.56-9.11c-0.3-1.69-1.24-3.41-3.21-3.38c-4.71,0.09-6.28,8.53-6.49,11.96c0.75,0,1.5,0,2.25,0
+						c-0.37-3.85-0.35-7.68,0.06-11.52C562.35,734.92,560.1,734.93,559.95,736.36L559.95,736.36z" />
+
+
+
+
+                <path d="M573.44,738.09c-0.2,3.73-0.39,7.47-0.59,11.2c-0.08,1.45,2.17,1.44,2.25,0c0.2-3.73,0.39-7.47,0.59-11.2
+						C575.76,736.65,573.51,736.65,573.44,738.09L573.44,738.09z" />
+
+
+
+
+                <path d="M574.62,730.84c-0.14,0.14-0.29,0.29-0.43,0.43c-1.03,1.03,0.57,2.62,1.59,1.59c0.14-0.14,0.29-0.29,0.43-0.43
+						C577.24,731.41,575.64,729.82,574.62,730.84L574.62,730.84z" />
+
+
+
+
+                <path d="M578.82,740.13c2-1.54,5.53-2.1,7.34,0.15c0.9,1.11,0.64,2.78,0.64,4.1c-0.01,1.48-0.02,2.96-0.03,4.44
+						c-0.01,1.45,2.24,1.45,2.25,0c0.02-3.39,1.1-8.36-1.96-10.76c-2.73-2.14-6.68-1.96-9.37,0.12
+						C576.55,739.06,577.67,741.01,578.82,740.13L578.82,740.13z" />
+
+
+
+
+                <path d="M586.73,741.31c-2.7,0.57-9.84,1.86-9.01,5.96c0.99,4.88,7.04,2.86,9.87,1.26c1.26-0.71,0.13-2.66-1.14-1.94
+						c-1.13,0.64-2.33,1.17-3.6,1.46c-0.63,0.14-1.26,0.24-1.86-0.02c-0.84-0.37-1.44-1.3-0.66-2.05c1.62-1.57,4.87-2.04,6.99-2.49
+						C588.75,743.18,588.15,741.01,586.73,741.31L586.73,741.31z" />
+
+
+
+
+                <path d="M597.76,749.03c2.41-5.3,4.82-10.59,7.23-15.89c-0.69-0.09-1.37-0.18-2.06-0.27c2.16,5.48,4.33,10.95,6.49,16.43
+						c0.53,1.33,2.7,0.75,2.17-0.6c-2.16-5.48-4.33-10.95-6.49-16.43c-0.31-0.79-1.61-1.25-2.06-0.27
+						c-2.41,5.3-4.82,10.59-7.23,15.89C595.22,749.2,597.16,750.35,597.76,749.03L597.76,749.03z" />
+
+
+
+
+                <path d="M600.03,744.51c2.67,0.58,5.35,0.84,8.08,0.73c1.44-0.06,1.45-2.31,0-2.25c-2.53,0.1-5.01-0.11-7.48-0.65
+						C599.22,742.03,598.62,744.2,600.03,744.51L600.03,744.51z" />
+
+
+
+
+                <path d="M613.39,735.95c0.31,3.73,0.62,7.45,0.92,11.18c0.12,1.43,2.37,1.45,2.25,0c-0.31-3.73-0.62-7.45-0.92-11.18
+						C615.52,734.51,613.27,734.5,613.39,735.95L613.39,735.95z" />
+
+
+
+
+                <path d="M616.62,740.15c0.55-0.71,1.25-1.66,2.19-1.86c2.11-0.44,1.96,1.46,1.96,2.83c0,2.29-0.02,4.58-0.03,6.87
+						c-0.01,1.45,2.24,1.45,2.25,0c0.01-2.29,0.03-4.58,0.03-6.87c0-1.48,0.08-3.11-1.11-4.19c-2.31-2.09-5.29-0.42-6.88,1.63
+						C614.15,739.69,615.74,741.3,616.62,740.15L616.62,740.15z" />
+
+
+
+
+                <path d="M623.71,741.66c1.03-1.99,5.21-5.79,6.41-1.78c0.38,1.27,0.14,2.81,0.12,4.12c-0.01,1.47-0.03,2.94-0.04,4.41
+						c-0.01,1.45,2.24,1.45,2.25,0c0.03-2.62,0.2-5.28,0.07-7.9c-0.09-1.76-0.8-3.2-2.42-4.01c-3.53-1.76-6.78,1.01-8.34,4.02
+						C621.1,741.81,623.04,742.95,623.71,741.66L623.71,741.66z" />
+
+
+
+
+                <path d="M635.05,728.63c0.09,6.62,0.51,13.2,1.25,19.78c0.16,1.42,2.41,1.44,2.25,0c-0.74-6.58-1.16-13.16-1.25-19.78
+						C637.28,727.19,635.03,727.18,635.05,728.63L635.05,728.63z" />
+
+
+
+
+                <path
+                    d="M638.25,739.31c2.33-1.37,5.38-0.13,5.63,2.7c0.24,2.82-2.68,4.72-5.21,3.56c-1.31-0.6-2.45,1.34-1.14,1.94
+						c3.99,1.83,8.81-0.8,8.61-5.43c-0.2-4.56-5.19-6.96-9.02-4.71C635.86,738.1,636.99,740.05,638.25,739.31L638.25,739.31z" />
+
+
+
+
+                <path d="M647.69,737.65c-0.34,3.44-0.42,6.88-0.22,10.34c0.08,1.44,2.33,1.45,2.25,0c-0.2-3.46-0.12-6.9,0.22-10.34
+						C650.09,736.21,647.84,736.22,647.69,737.65L647.69,737.65z" />
+
+
+
+
+                <path
+                    d="M649.42,732.34c1.45,0,1.45-2.25,0-2.25C647.97,730.09,647.97,732.34,649.42,732.34L649.42,732.34z" />
+
+
+
+
+                <path
+                    d="M655.44,743.5c3.03,0.2,5.95-0.16,8.85-1.07c0.47-0.15,0.83-0.58,0.83-1.08c-0.03-2.54-0.49-5.86-3.41-6.62
+						c-3.12-0.81-5.51,1.97-6.25,4.68c-0.78,2.85-0.64,6.48,1.57,8.68c2,2,5.13,2.19,7.24,0.33c1.09-0.96-0.51-2.55-1.59-1.59
+						c-1.65,1.46-3.93,0.3-4.82-1.41c-0.72-1.39-0.68-3.22-0.39-4.7c0.31-1.6,1.49-4.4,3.65-3.81c1.76,0.48,1.74,3.03,1.76,4.45
+						c0.28-0.36,0.55-0.72,0.83-1.08c-2.71,0.85-5.42,1.17-8.25,0.99C654,741.16,654,743.41,655.44,743.5L655.44,743.5z" />
+
+
+
+
+                <path d="M667.12,735.95c0.19,3.87,0.38,7.74,0.57,11.61c0.07,1.44,2.32,1.45,2.25,0c-0.19-3.87-0.38-7.74-0.57-11.61
+						C669.3,734.51,667.05,734.5,667.12,735.95L667.12,735.95z" />
+
+
+
+
+                <path d="M677.62,748.42c0.15-3.13,0.06-6.34-0.56-9.42c-0.34-1.69-1.06-3.36-2.93-3.7c-3.5-0.65-5.39,2.93-6.57,5.53
+						c-0.59,1.31,1.35,2.45,1.94,1.14c0.73-1.61,1.36-3.75,3.32-4.23c1.31-0.32,1.65,0.44,2,1.58c0.31,1,0.35,2.14,0.44,3.17
+						c0.19,1.98,0.2,3.96,0.1,5.95C675.3,749.87,677.55,749.87,677.62,748.42L677.62,748.42z" />
+
+
+
+
+                <path d="M681.04,733.79c-0.29,4.19-0.82,14.11,5.08,14.98c1.42,0.21,2.03-1.96,0.6-2.17c-4.4-0.65-3.64-9.76-3.43-12.81
+						C683.39,732.35,681.14,732.36,681.04,733.79L681.04,733.79z" />
+
+
+
+
+                <path d="M678.29,737.72c2.75,0.86,5.62,0.86,8.37-0.02c1.37-0.44,0.79-2.61-0.6-2.17c-2.4,0.76-4.77,0.77-7.17,0.02
+						C677.5,735.11,676.91,737.28,678.29,737.72L678.29,737.72z" />
+
+
+
+
+                <path d="M689.6,739.67c0.2-1.14,1.89-1.27,2.79-1.35c1.56-0.14,2.86,0.31,3.08,2.03c0.32,2.45,0.19,5.03,0.06,7.49
+						c-0.08,1.45,2.17,1.44,2.25,0c0.13-2.53,0.2-5.11-0.06-7.64c-0.17-1.59-0.75-3.04-2.28-3.74c-2.35-1.08-7.48-0.47-8.01,2.61
+						C687.19,740.49,689.35,741.09,689.6,739.67L689.6,739.67z" />
+
+
+
+
+                <path d="M695.01,741.33c-1.78-0.14-3.66-0.18-5.17,0.92c-1.18,0.85-1.92,2.3-1.57,3.76c0.92,3.8,5.35,3.45,8.24,2.68
+						c1.4-0.37,0.8-2.55-0.6-2.17c-1.56,0.42-4.43,1.24-5.34-0.72c-1.12-2.42,3.25-2.31,4.43-2.22
+						C696.45,743.69,696.45,741.44,695.01,741.33L695.01,741.33z" />
+
+
+
+
+                <path d="M701.29,732.07c0.17,5.59,0.33,11.19,0.5,16.78c0.04,1.44,2.29,1.45,2.25,0c-0.17-5.59-0.33-11.19-0.5-16.78
+						C703.5,730.62,701.25,730.62,701.29,732.07L701.29,732.07z" />
+
+
+
+
+                <path d="M474.6,763.09c-1.46-0.25-3.08-0.21-4.06,1.08c-1.15,1.5-1.19,4.43-1.02,6.21c0.32,3.18,2.91,6.41,6.4,4.97
+						c2.06-0.85,2.96-3.52,3.05-5.59C479.1,766.72,477.59,763.96,474.6,763.09c-1.39-0.41-1.99,1.76-0.6,2.17
+						c2.86,0.83,3.18,4.26,2.18,6.7c-0.66,1.61-2.36,1.92-3.57,0.57c-1.38-1.53-1.56-7.78,1.4-7.27
+						C475.42,765.5,476.03,763.33,474.6,763.09z" />
+
+
+
+
+                <path d="M477.06,757.89c0,5.98-0.01,11.96-0.01,17.95c0,1.45,2.25,1.45,2.25,0c0-5.98,0.01-11.96,0.01-17.95
+						C479.31,756.44,477.06,756.44,477.06,757.89L477.06,757.89z" />
+
+
+
+
+                <path d="M487.8,762.71c-3.53,0.76-6.63,4.06-6.09,7.85c0.43,3.04,3.47,5.3,6.49,5.06C494.84,775.1,495.41,761.65,487.8,762.71
+						c-1.43,0.2-0.82,2.37,0.6,2.17c4.03-0.56,3.37,8.8-0.89,8.51c-1.9-0.13-3.61-1.73-3.62-3.66c0-2.53,2.22-4.36,4.5-4.85
+						C489.82,764.57,489.22,762.4,487.8,762.71z" />
+
+
+
+
+                <path d="M504.65,767.32c3.56,0.78,10.66,0.24,8.79-5.34c-1.56-4.65-7.21-3.99-11.04-3.47c-0.48,0.07-0.83,0.64-0.83,1.08
+						c0,2.58,0,5.16,0,7.74c0,2.29-0.62,5.55,0,7.74c0.71,2.51,4.43,2.58,6.58,2.29c6.62-0.88,8.05-9.76,1.27-11.69
+						c-1.39-0.4-1.99,1.77-0.6,2.17c3.69,1.05,3.78,5.67,0.3,6.98c-1.21,0.45-2.93,0.6-4.18,0.17c-1.08-0.37-0.76,0.06-1.11-0.97
+						c-0.62-1.8,0-4.79,0-6.69c0-2.58,0-5.16,0-7.74c-0.28,0.36-0.55,0.72-0.83,1.08c1.32-0.18,2.7-0.45,4.03-0.35
+						c0.61-0.04,1.2,0.08,1.77,0.36c2.08,0.21,2.56,1.69,1.45,4.43c-1.17,0.99-3.75,0.29-5,0.02
+						C503.84,764.85,503.24,767.02,504.65,767.32L504.65,767.32z" />
+
+
+
+
+                <path
+                    d="M517.58,775.35c1.45,0,1.45-2.25,0-2.25C516.13,773.1,516.13,775.35,517.58,775.35L517.58,775.35z" />
+
+
+
+
+                <path d="M515.78,763.03c0.18,3.79,0.41,7.59,0.68,11.38c0.1,1.44,2.35,1.45,2.25,0c-0.27-3.79-0.49-7.58-0.68-11.38
+						C517.96,761.59,515.71,761.58,515.78,763.03L515.78,763.03z" />
+
+
+
+
+                <path d="M518.38,769.79c0.65-3.13,3.55-5.16,6.7-4.78c1.43,0.17,1.42-2.08,0-2.25c-4.08-0.49-8.04,2.42-8.87,6.43
+						C515.91,770.61,518.08,771.21,518.38,769.79L518.38,769.79z" />
+
+
+
+
+                <path d="M530.26,766.37c1.25-0.82,3.15-2.18,4.65-1.22c1.05,0.66,1.27,2.26,1.28,3.38c0.02,2.35-0.65,4.5-0.09,6.85
+						c0.34,1.41,2.51,0.81,2.17-0.6c-0.82-3.45,1.33-7.33-1.05-10.47c-2.17-2.85-5.62-1.51-8.1,0.12
+						C527.92,765.22,529.05,767.17,530.26,766.37L530.26,766.37z" />
+
+
+
+
+                <path d="M536.01,768.67c-1.79-0.44-3.77-0.87-5.53-0.05c-1.4,0.66-2.5,2.01-2.42,3.61c0.07,1.58,1.28,2.85,2.7,3.4
+						c1.87,0.73,3.86,0.14,5.67-0.49c1.36-0.47,0.77-2.65-0.6-2.17c-1.41,0.49-5,1.72-5.48-0.67c-0.19-0.94,0.71-1.58,1.52-1.8
+						c1.15-0.31,2.42,0.06,3.54,0.34C536.82,771.19,537.42,769.02,536.01,768.67L536.01,768.67z" />
+
+
+
+
+                <path d="M549.93,765.41c-1.61-4.01-8.85-4.68-8.35,0.76c0.17,1.9,1.74,3.18,3.21,4.18c0.72,0.49,1.95,0.92,2.51,1.59
+						c0.72,0.88-0.13,1.72-1.22,1.81c-1.13,0.09-2.17-0.48-3-1.18c-1.1-0.92-2.7,0.66-1.59,1.59c1.78,1.5,4.52,2.6,6.72,1.24
+						c1.57-0.97,2.45-3.1,1.14-4.65c-1.07-1.27-2.9-1.85-4.17-2.89c-0.7-0.57-1.48-1.3-1.35-2.28c0.32-2.32,3.36-1,3.93,0.42
+						C548.3,767.33,550.47,766.76,549.93,765.41L549.93,765.41z" />
+
+
+
+
+                <path d="M552.78,764.77c0,3.59,0,7.17,0,10.76c0,1.45,2.25,1.45,2.25,0c0-3.59,0-7.17,0-10.76
+						C555.03,763.32,552.78,763.32,552.78,764.77L552.78,764.77z" />
+
+
+
+
+                <path d="M552.35,759.61c0,0.14,0,0.29,0,0.43c0,1.45,2.25,1.45,2.25,0c0-0.14,0-0.29,0-0.43
+						C554.6,758.16,552.35,758.16,552.35,759.61L552.35,759.61z" />
+
+
+
+
+                <path d="M559.12,757.89c0.25,5.74,0.72,11.46,0.98,17.2c0.06,1.44,2.31,1.45,2.25,0c-0.25-5.74-0.72-11.46-0.98-17.2
+						C561.3,756.45,559.05,756.44,559.12,757.89L559.12,757.89z" />
+
+
+
+
+                <path style="fill:#FC421D;" d="M429.7,772.89l3.71-0.04c0.71-1.14,0.59-3.86,0.84-5.18c1.74-9.09,8.76-16.23,12.03-24.89
+				c1.78-4.71,2.31-10.33-0.48-14.52c-1.29-1.93-3.18-3.4-5.2-4.53c-4.43-2.47-9.83-3.46-14.66-1.93s-8.88,5.82-9.39,10.87
+				c-0.63,6.28,3.84,11.73,6.99,17.2C427.38,756.55,429.7,772.89,429.7,772.89z" />
+
+                <path d="M429.7,774.02c1.24-0.01,2.47-0.02,3.71-0.04c0.54-0.01,0.9-0.35,1.08-0.83c1.02-2.56,0.79-5.48,1.61-8.14
+					c1.17-3.82,3.33-7.3,5.36-10.71c3.22-5.39,6.85-11.02,7.35-17.45c0.92-11.94-12.4-19.59-23.17-16.12
+					c-4.51,1.45-8.42,5.03-9.75,9.64c-1.67,5.79,1.25,11.15,4.18,15.96c5.04,8.29,7.17,17.31,8.55,26.86
+					c0.21,1.43,2.37,0.82,2.17-0.6c-0.94-6.5-2.19-13.18-4.5-19.34c-1.56-4.16-4.27-7.62-6.31-11.53
+					c-3.99-7.66-2.12-16.62,7.08-19.03c7.23-1.89,17.67,2.04,19.33,9.97c1.44,6.85-2.71,13.56-6.06,19.17
+					c-2.66,4.45-5.55,8.96-6.82,14.04c-0.33,1.31-0.1,5-0.84,5.83c0.18-0.2,0.19,0-1.11,0.04c-0.62,0.02-1.24,0.01-1.85,0.02
+					C428.25,771.78,428.25,774.03,429.7,774.02z" />
+
+
+
+
+
+
+
+
+
+
+            </svg>
+            <img class="desktop-ilu" id="coop-car" src="../static/Austausch Flo/02_inhalt illustrationen/04_story_cooperlínia/02_vitor_auto/vitorauto.gif" />
+            <img class="desktop-ilu" id="antonio" src="../static/Austausch Flo/02_inhalt illustrationen/04_story_cooperlínia/antonio.gif" />
+            <img class="desktop-ilu" id="agent" src="../static/Austausch Flo/02_inhalt illustrationen/04_story_cooperlínia/umweltagent.gif" />
+        </div>
+        <div class="right-column" id="section2-text">
+            <span id="draw-coop-map"></span>
+            <h1>03 - Die Reise unserer Abfälle</h1>
+            <img class="mobile-ilu-fullscreen" src="../static/Austausch Flo/02_inhalt illustrationen/04_story_cooperlínia/01_straße/cooperlínia straße alles.png" />
+            <p>Wir fahren durch eine lange Industriestraße in Paulínia, eine Stadt knapp 100km vor São Paulo. Rechts und links reihen sich Müllverwertungs und -trennungsanlagen auf. Aufmerksam suchen wir nach einer Aufschrift „Cooperlínia Ambiental do Brasil“,
+                eine Organisation die seit 17 Jahren Abfallwirtschaft betreibt. 2004 hat sie das ISO 14001-Zertifikat für soziale Verantwortung erhalten, da sie Menschen ohne Bildung sowie Gefängnisinsassen beschäftigt. Doch am Ende der Straße angekommen
+                sind wir leider nicht fündig geworden. An einer Bar steige ich aus um den Besitzer nach dem Weg zu fragen,
+                <span id="coop-trigger"></span> was sich aber nicht ganz so einfach aufgrund meiner fehlenden Portugiesisch Kenntnisse gestaltet.
+                <span id="coop-map-out"></span> Per Google Übersetzer versuche ich ihm mein Anliegen verständlich zu machen, was offenbar auch funktioniert. Problem ist bloß dass er mich daraufhin mit einem portugiesischen Wortschwall überhäuft. Etwas
+                hilflos blicke ich ihn an und tippe nochmal ein, dass er mir bitte seine Antwort in das Handy schreiben soll. Das tut er dann auch, hat aber offenbar weiterhin das Bedürfnis trotzdem mir auch alles nochmal persönlich zu erklären. Eine
+                genaue Auskunft bekomme ich nicht, nur dass wir nochmal circa 1,5 km zurück fahren sollen. Als ich schon auf dem Weg zurück zum Van bin, gibt er mir per Zeichen zu verstehen, dass ich auch dringend eine lange Hose anziehen solle.
+            </p>
+            <p>Langsam fahren wir die Straße zurück und versuchen unser Glück bei einer Firma, welche der Wegbeschreibung des Barbesitzers passend erscheint. Sie erweist sich jedoch nicht als richtig und wir werden mehr oder weniger Wortlos am verschlossenen
+                Eingangstor stehengelassen. Etwas frustriert fahren wir weiter und kommen dann endlich doch noch an.
+                <span id="coop-car-trigger"></span> Nachdem ich meinen Namen genannt habe wird uns das Tor geöffnet und wir können einfahren.
+            </p>
+            <img class="mobile-ilu-fullscreen" id="coop-car" src="../static/Austausch Flo/02_inhalt illustrationen/04_story_cooperlínia/02_vitor_auto/vitorauto.gif" />
+            <p id="pin-car">Als wir neben einem VW Golf parken, liegt ein Mann bäuchlings auf der Rückbank und döst, sodass nur seine Beine herrausschauen. Als wir aussteigen klettert auch er aus dem Kleinwagen und stellt sich als Vitor vor. Er ist studierter Umweltingenieur
+                und arbeitet seit 2011 bei Cooperlínia. Täglich kommen hier mehrere Lastwagenfuhren von gesammeltem Hausmüll der Stadt Paulinía an. Diese hat, was leider nicht die Regel in Brasilien ist, ein Unternehmen namens Paulínia Konsortium mit
+                der Müllabholung beauftragt. Nachdem die Abfälle bei Cooperlínia ankommen, werden sie erstmal sortiert, gereinigt, gepresst und anschließend gewogen. An der Waage wird ein Ticket ausgestellt auf welchem verschiedene Informationen vermerkt
+                werden wie beispielsweise das Pressdatum oder die Materialart. <span id="coop-car-trigger-out"></span>Diese Kennzeichnung ist besonders wichtig für die interne Koordination sowie für den Weiterverkauf an Recyclingfirmen. Ein Gebäude weiter
+                gibt es die Sortieranlage, ein langes Laufband an dem mehrere Mitarbeiter stehen welche die festen Materialien in 14 verschiedene Kategorien für die Weiterverarbeitung aufteilen. Am Ende des Bandes gibt es eine Sammelstelle für nicht wiedervertbare
+                Abfälle wie beispielsweise Kaffeesatz, Toilettenpapier oder Latexhandschuhe. Diese werden dann Fachgerecht entsorgt.
+            </p>
+            <img class="mobile-ilu-fullscreen" src="../static/Austausch Flo/02_inhalt illustrationen/04_story_cooperlínia/antonio_cropped.gif" />
+            <p id="pin-antonio">Die verwertbaren Materialien werden anschließend gereinigt, dadurch haben sie einen höheren Wert und können teurer verkauft werden. Der 79 Jährige Antônio kümmert sich beispielsweise um die Säuberung der Metallwertstoffe. In einer kleinen
+                Werkstatt entfernt er unter anderem Plastikrückstände auf Metallplatten. Sein feines Haar ist schneeweiß, die Arme sind von Altersflecken bedeckt, aber seine Augen hinter der Brille strahlen. Etwas wacklig steht er auf als wir den Raum
+                betreten und stellt sich in einem fröhlichen Wortschwall vor. „Es ist eine große Freude dass ihr aus Deutschland hergekommen seit, das ist so weit weg! Ich arbeite hier seit 18 Jahren und liebe was ich tue, weil wir mit dem was wir machen
+                erfolgreich sind.“ Stolz zeigt er seinen Arbeitsplatz und vollführt mit gekonnten Bewegungen einige Handgriffe an einer Leiterplatte.
+            </p>
+            <p>Antônio ist dankbar für seinen Job, aufgrund seines Alters hätte er es schwer eine Arbeit zu finden. Doch bei Cooperlínia werden eben besonders sozial Benachteiligte beschäftigt. Die meisten von ihnen haben eine schlechte Schulbildung und
+                bekommen die Möglichkeit gemeinsam mit der Organisation einen Karriereplan zu erstellen.
+                <span id="fade-out-antonio"></span> Sie fangen als allgemeiner Helfer an und können dann hierarchisch aufsteigen. Der Stundensatz ist für alle gleich, doch jede Position hat einen Bonus. Zum Beispiel bekommt ein allgemeiner Helfer 30%
+                mehr die Stunde und ein Leiter 70%. So fühlt sich jeder fair und gerecht behandelt und arbeitet gerne.
+            </p>
+            <q id="agent-trigger">Wir haben die Vision, dass Kinder die Umweltagenten sind. Dann können sie die Eltern
+                korrigieren, welche die
+                Trennung nicht richtig machen. So kann Schritt für Schritt eine Veränderung in Brasilien erreicht
+                werden.</q>
+            <img class="mobile-ilu" src="../static/Austausch Flo/02_inhalt illustrationen/04_story_cooperlínia/umweltagent.gif" />
+            <p id="agent-pin">Auf meine Frage ob bei Cooperlínia auch ehemalige Catadores arbeiten verneint Vitor. „Also wir haben hier keine Catadores, aber in Paulínia gibt es viele Catadores. Wir sind der Ansicht dass sie letztendlich unsere Konkurrenz sind. Aber wir
+                beabsichtigen ein „Open-House-Projekt“ zu machen, bei dem die Catadores ihr gesammeltes Material abgeben können und wir sie dafür bezahlen. Außerdem könnten wir sie Unterrichten, damit sie besser über die Müllsortierung bescheid wissen.
+                Dadurch würden wir eine Steigerung der Produktivität haben und allen wäre geholfen.“ Doch das ist leider noch Zukunftsmusik. Eine andere Stelle an der Cooperlínia versucht anzuknüpfen ist die Umweltbildung der Jüngsten der Gesellschaft.
+                „Wir haben die Vision, dass Kinder die Umweltagenten sind. Ich spreche manchmal in der Schule um ein Bewusstsein bei den Schülern zu schaffen. Dann können sie die Eltern korrigieren, welche die Trennung nicht richtig machen. So kann Schritt
+                für Schritt eine Veränderung in Brasilien erreicht werden.“</p>
+            <p id="fade-out-agent">Cooperlínia ist also noch lange nicht am Ende seines Schaffens angekommen und steckt sich auch weiterhin hohe Ziele um den Recyclingkreislauf in Paulínia weiter voran zu bringen. Nach einem informativen Nachmittag geht es für uns wieder zurück
+                ins Auto und auf die Straße und bei Cooperlínia geht der geschäftige Betrieb weiter.
+            </p>
+        </div>
+    </div>
+    <div class="infographic" id="infographic2">
+        <div class="info-count" id="workday-count1">
+            <span class="count" id="workday-count1-number">20</span><span class="count-unit">km</span>
+            <p>legt ein Catador im Schnitt an nur einem Arbeitstag zurück.</p>
+        </div>
+        <div class="info-count" id="workday-count2">
+            <span class="count">12</span><span class="count-unit">h</span>
+            <p>ist er dafür durchschnittlich auf den Beinen.</p>
+        </div>
+        <img class="workday-places desktop-ilu" id="workday1" src="../static/Austausch Flo/02_inhalt illustrationen/05_infografik_arbeitstag FINAL/step01_arbeitstag.png" />
+        <img class="workday-places desktop-ilu" id="workday2" src="../static/Austausch Flo/02_inhalt illustrationen/05_infografik_arbeitstag FINAL/step02_arbeitstag.png" />
+        <img class="workday-places desktop-ilu" id="workday3" src="../static/Austausch Flo/02_inhalt illustrationen/05_infografik_arbeitstag FINAL/step03_arbeitstag.png" />
+        <img class="workday-places desktop-ilu" id="workday4" src="../static/Austausch Flo/02_inhalt illustrationen/05_infografik_arbeitstag FINAL/step04_arbeitstag.png" />
+        <img class="workday-places desktop-ilu" id="workday5" src="../static/Austausch Flo/02_inhalt illustrationen/05_infografik_arbeitstag FINAL/step05_arbeitstag.png" />
+        <img class="workday-places desktop-ilu" id="workday6" src="../static/Austausch Flo/02_inhalt illustrationen/05_infografik_arbeitstag FINAL/step06_arbeitstag.png" />
+        <svg class="desktop-ilu" id="workday-graphic" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1091.33 713.67" style="enable-background:new 0 0 1091.33 713.67;" xml:space="preserve">
+            <path style="fill:none;" d="M8.8,599.34c9.1,5.33,14.53,16.29,24.57,19.52c15.9,5.12,30.41-13.09,31.76-29.74 c1.35-16.65-4.59-33.37-2.38-49.93c2.56-19.25,15.68-35.44,21.01-54.11c11.93-41.73-16.35-83.14-26.5-125.34 c-10.1-41.97-1.24-88.13,23.67-123.39c15.65-22.15,37.54-40.71,46.27-66.39c1.63-4.8,3.17-10.29,7.63-12.71
+            c3.01-1.64,6.67-1.42,10.07-0.95c21.57,2.93,41.93,14.08,56.01,30.68c3.03,3.57,5.9,7.48,10.04,9.67 c3.18,1.68,6.84,2.18,10.43,2.42c19.6,1.29,40.11-4.45,58.49,2.48c10.59,3.99,19.45,11.91,30.28,15.19 c11.82,3.58,24.53,1.24,36.87,1.82c45.56,2.12,79.86,42.46,123.29,56.41c8.68,2.79,17.74,4.52,26,8.37
+            c8.74,4.08,16.23,10.36,23.66,16.51c54.52,45.14,111.77,86.97,171.34,125.2c13.42,8.61,29.33,17.38,44.48,12.43 c8.22-2.69,16.1-9.33,24.42-6.97c9.71,2.76,12.13,15.37,19.22,22.56c10.84,10.97,28.93,6.84,44.25,8.51 c21.73,2.36,40.02,17.6,61.33,22.44c27.46,6.24,56.8-5.38,84.06,1.7c4.81,1.25,9.56,3.12,13.39,6.28
+            c8.63,7.12,5.86,19.69,7.59,30.97c3.95,25.79,13.12,56.12,95.65,94.2" />
+        </svg>
+    </div>
+    <div class="infographic" id="mobile-workday">
+        <div class="info-count mobile-infographic-counter" id="mobile-workday-count1">
+            <span class="count" id="workday-count1-number">20</span><span class="count-unit">km</span>
+            <p>legt ein Catador im Schnitt an nur einem Arbeitstag zurück.</p>
+        </div>
+        <img class="mobile-ilu mobile-infographic-position" src="../static/Austausch Flo/02_inhalt illustrationen/05_infografik_arbeitstag FINAL/laufweg_arbeitstag_hochkant.png" />
+    </div>
+    <span id="infographic2-end"></span>
+    <div class="section" id="section3">
+        <div class="left-column">
+            <img class="desktop-ilu" id="bus" src="../static/Austausch Flo/02_inhalt illustrationen/06_story_erica/01_erica_bus FINAL/ericaauto.gif" />
+            <img class="desktop-ilu" id="vista" src="../static/Austausch Flo/02_inhalt illustrationen/06_story_erica/02_erica_vista_gardens FINAL/vistagarden.gif" />
+            <img class="desktop-ilu" id="purse" src="../static/Austausch Flo/02_inhalt illustrationen/06_story_erica/03_erica_geldbeutel FINAL/Geldbeutel.gif" />
+        </div>
+        <div class="right-column" id="section3-text">
+            <h1>04 - Ericas Familienunternehmen</h1>
+            <img class="mobile-ilu" id="bus" src="../static/Austausch Flo/02_inhalt illustrationen/06_story_erica/01_erica_bus FINAL/ericaauto.gif" />
+            <p>Erica arbeitet in Sorocaba, einer Großstadt etwa 100 Kilometer entfernt von São Paulo. Zusammen mit ihrem Mann und ihren beiden Kindern hat sie feste Routen und Haushalte die sie mit ihrem alten weißen Kastenbus besuchen. Die hinteren Seitentüren
+                des Autos müssen mit Spanngurten zusammengehalten werden und Rost durchbricht an mehreren Stellen den beige weißen Lack. Auf der Heckscheibe ist mit Tape ein in sich unterteiltes Sechseck aufgeklebt, das linke hintere Fenster fehlt. Ein
+                paar Meter neben dem Bus liegt Ericas Baby in einem Buggy. Die vierjährige Schwester sitzt in einem weiß rot gemusterten Kleid daneben und isst Kekse. Für die Kinder ist das Alltag. Frühmorgens machen sie sich auf den Weg um nach wiederverwertbaren
+                Abfällen zu suchen. Dienstags und Freitags fahren sie zu Wohnsiedlungen, die restlichen Tage sind sie in den Straßen unterwegs.</p>
+            <q id="bus-out">Wenn die Leute lernen würden, wie man den Müll im Haus sortiert, würde mir das sehr helfen.
+                Es
+                wäre nicht so
+                riskant alle möglichen Arten von Müll zu transportieren, wie zum Beispiel scharfe oder spitze Objekte an
+                denen
+                man sich leicht schneiden kann.</q>
+            <img class="mobile-ilu-fullscreen" id="vista " src="../static/Austausch Flo/02_inhalt illustrationen/06_story_erica/02_erica_vista_gardens FINAL/vistagarden.gif" />
+            <p id="vista-in">Heute sind sie in Vista Garden, einer schicken Wohnanlage mit eigenem Pool im Südwesten Sorocabas. Direkt hinter dem weißen Eingangsmetalltor stehen zig große Plastikcontainer in verschiedenen Farben. Rot, Grün, Grau, alle mit dem Aufdruck
+                ′Vista Garden – Lixo Comum′. Eine ordentliche Mülltrennung gibt es hier trotzdem nicht. Dafür ist Erica zuständig, sie durchsucht die Tonnen nach brauchbaren Wertstoffen: ′Wenn die Leute lernen würden, wie man den Müll im Haus sortiert,
+                würde mir das sehr helfen. Es wäre nicht so riskant alle möglichen Arten von Müll zu transportieren, wie zum Beispiel scharfe oder spitze Objekte an denen man sich leicht schneiden kann.′ Ich frage daraufhin ob sie der Meinung ist, dass
+                dies in naher Zukunft in Brasilien funktionieren wird. ′Ich glaube es ändert sich bereits aber es wird noch lange dauern bis die Leute lernen den Müll zu sortieren.′ Und wenn das jemand einschätzen kann, dann sie. Schließlich arbeitet
+                sie bereits seitdem sie ein kleines Mädchen ist als Catadora. Damals ist sie zusammen mit ihren Eltern durch die Straßen gezogen und hat Materialien gesammelt. Genauso wie Erica es nun mit ihren Kindern macht. Nach einer kurzen Denkpause
+                kommt sie zu dem Schluss, dass sie nie einen anderen Job hatte, keine andere berufliche Tätigkeit kennt. Sie ist damit aufgewachsen und hat sich nie groß darüber Gedanken gemacht da es für sie einfach normal ist. Ein Grund warum ihr lange
+                Zeit nicht die Wichtigkeit ihres Schaffens im Bezug auf die Umwelt bewusst war.<span id="vista-out"></span> Doch mit den Jahren und nach vielen Gesprächen mit ihren Mitmenschen wurde dies immer deutlicher für sie. Auch da die Umwelteinwirkungen
+                und der Umgang mit Abfällen sich im Laufe der Zeit stark gewandelt haben. ′Es werden immer mehr Abfälle produziert, besonders Plastik wird immer mehr. Das höchste Müllaufkommen ist meiner Meinung nach in den reicheren Gegenden, so wie
+                hier′, sagt sie mit ausschweifender Handbewegung.<span id="purse-in"></span>
+            </p>
+            <q>Unser Einkommen reicht nicht jeden Monat. Gott sei Dank helfen uns viele Menschen mit unterschiedlichen
+                Dingen
+                wie zum Beispiel Kleidung für die Kinder, Spielzeug, Essen und so weiter.</q>
+            <img class="mobile-ilu-fullscreen " id="purse" src="../static/Austausch Flo/02_inhalt illustrationen/06_story_erica/03_erica_geldbeutel FINAL/Geldbeutel.gif" />
+            <p>Trotz der hohen Auslastung, reicht das Einkommen der Familie nicht jeden Monat. Sie sind auf die Hilfe anderer angewiesen. ′Gott sei Dank helfen uns viele Menschen mit unterschiedlichen Dingen wie zum Beispiel Kleidung für die Kinder, Spielzeug,
+                Essen und so weiter.′<span id="purse-out"></span> Doch trotz aller Widrigkeiten ist Aufgeben für Erica und ihre Familie keine Option. Und so verabschiedet sie sich um weiter zu ziehen, zur nächsten Wohnanlage und neuen Abfällen die darauf
+                warten, weiterverarbeitet zu werden.</p>
+        </div>
+    </div>
+    <div class="section" id="impress">
+        <div class="left-column">
+        </div>
+        <div class="right-column">
+            <h1>Impressum</h1>
+            <p>Konzept, Design und Inhalt: Vanessa Liebler</p>
+            <p>Webentwicklung und Realisierung: Florian Delvo </p>
+            <p>Alle Rechte vorbehalten. Sämtliche Inhalte dieser Website (Grafiken, Animationen, Texte), sowie deren Anordnung unterliegen dem Schutz des Urheberrechts. Alle Bildrechte liegen bei Vanessa Liebler. Inhalte der Website dürfen nicht kopiert,
+                verbreitet, verändert oder Dritten zugänglich gemacht werden.</p>
+            <p>Kontakt: <a href="mailto:vanessa.liebler@web.de">vanessa.liebler@web.de</a></p>
+        </div>
+    </div>
+</body>
+
+</html>
