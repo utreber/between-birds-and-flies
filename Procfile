@@ -1,1 +1,1 @@
-web: gunicorn between-birds-and-flies:app
+web: gunicorn app:between-birds-and-flies
