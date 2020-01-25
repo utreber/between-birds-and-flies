@@ -35,6 +35,16 @@ $(document).ready(function() {
                 });
             };
 
+            $("#nav-02").hover(function() {
+                $("#menu-cover").attr("src", "../static/Austausch Flo/02_inhalt illustrationen/02_story_aline/aline_strohhalm outlines.png");
+            });
+            $("#nav-03").hover(function() {
+                $("#menu-cover").attr("src", "../static/Austausch Flo/02_inhalt illustrationen/04_story_cooperlínia/vitor_golf outlines.png");
+            });
+            $("#nav-04").hover(function() {
+                $("#menu-cover").attr("src", "../static/Austausch Flo/02_inhalt illustrationen/06_story_erica/erica_Geldbeutel outlines.png");
+            });
+
             $("#open-menu,#nav-01").click(function() {
                 $("#menu").toggle();
                 if ($(window).width() >= 900) {
