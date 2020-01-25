@@ -39,7 +39,7 @@ $(document).ready(function() {
                 $("#menu-cover").attr("src", "../static/Austausch Flo/02_inhalt illustrationen/02_story_aline/aline_strohhalm outlines.png");
             });
             $("#nav-03").hover(function() {
-                $("#menu-cover").attr("src", "../static/Austausch Flo/02_inhalt illustrationen/04_story_cooperlínia/vitor_golf outlines.png");
+                $("#menu-cover").attr("src", "../static/Austausch Flo/02_inhalt illustrationen/04_story_cooperlinia/vitor_golf outlines.png");
             });
             $("#nav-04").hover(function() {
                 $("#menu-cover").attr("src", "../static/Austausch Flo/02_inhalt illustrationen/06_story_erica/erica_Geldbeutel outlines.png");
@@ -353,7 +353,7 @@ $(document).ready(function() {
                 .setTween(coopMapOutTimeline)
                 .addTo(controller);
 
-            var slideInCoopCar = slide("#coop-car", -2000, 0);
+            var slideInCoopCar = slide("#coop-car", -5000, 0);
             var carInTimeline = new TimelineMax();
             carInTimeline.add(slideInCoopCar);
             var coopCarScene = new ScrollMagic.Scene({
@@ -372,7 +372,7 @@ $(document).ready(function() {
                 .setTween(carOutTimeline)
                 .addTo(controller);
             var antonioIn = fade("#antonio", 0, 1);
-            var slideInAntonio = slide("#antonio", -2000, 0)
+            var slideInAntonio = slide("#antonio", -5000, 0)
             var antonioInTimeline = new TimelineMax();
             antonioInTimeline.add(antonioIn, "a").add(slideInAntonio, "a");
             var antonionInScene = new ScrollMagic.Scene({
@@ -382,7 +382,7 @@ $(document).ready(function() {
                 .setTween(antonioInTimeline)
                 .addTo(controller);
             var fadeOutAntonio = fade("#antonio", 1, 0);
-            var slideOutAntonio = slide("#antonio", 0, -2000)
+            var slideOutAntonio = slide("#antonio", 0, -5000)
             var antonioOutTimeline = new TimelineMax();
             antonioOutTimeline.add(fadeOutAntonio, "a").add(slideOutAntonio, "a");
             var fadeOutAntonioScene = new ScrollMagic.Scene({
@@ -391,7 +391,7 @@ $(document).ready(function() {
                 })
                 .setTween(antonioOutTimeline)
                 .addTo(controller);
-            var slideInAgent = slide("#agent", -2000, 0);
+            var slideInAgent = slide("#agent", -5000, 0);
             var agentInTimeline = new TimelineMax();
             agentInTimeline.add(slideInAgent);
             var coopAgentSceneIn = new ScrollMagic.Scene({
@@ -442,8 +442,8 @@ $(document).ready(function() {
                 .setTween(busOutTimeline)
                 .addTo(controller);
 
-            var slideInVista = slide("#vista", -2000, 0);
-            var slideOutVista = slide("#vista", 0, -2000);
+            var slideInVista = slide("#vista", -5000, 0);
+            var slideOutVista = slide("#vista", 0, -5000);
             var vistaInTimeline = new TimelineMax();
             vistaInTimeline.add(slideInVista);
             var slideInVistaScene = new ScrollMagic.Scene({
@@ -461,8 +461,8 @@ $(document).ready(function() {
                 .setTween(vistaOutTimeline)
                 .addTo(controller);
 
-            var slideInPurse = slide("#purse", -2000, 0);
-            var slideOutPurse = slide("#purse", 0, -2000);
+            var slideInPurse = slide("#purse", -5000, 0);
+            var slideOutPurse = slide("#purse", 0, -5000);
             var purseInTimeline = new TimelineMax();
             purseInTimeline.add(slideInPurse);
             var purseOutTimeline = new TimelineMax();
@@ -524,9 +524,9 @@ $(document).ready(function() {
                 .addTo(controller);
 
             var fadeInFlood3 = fade("#flood3", 0, 1);
-            var slideInFlood3 = slide("#flood3", -2000, 0);
+            var slideInFlood3 = slide("#flood3", -5000, 0);
             var fadeOutFlood3 = fade("#flood3", 1, 0);
-            var slideOutFlood3 = slide("#flood3", 0, -2000);
+            var slideOutFlood3 = slide("#flood3", 0, -5000);
             var floodInTimeline = new TimelineMax();
             floodInTimeline.add(slideInFlood3).add(fadeInFlood3);
             var fadeInFlood3Scene = new ScrollMagic.Scene({
@@ -548,7 +548,7 @@ $(document).ready(function() {
                 .addTo(controller);
 
 
-            var slideInTurtle = slide("#turtle", -2000, 0);
+            var slideInTurtle = slide("#turtle", -5000, 0);
             var slideOutTurtle = fade("#turtle", 1, 0);
             var slideInTurtleScene = new ScrollMagic.Scene({
                     triggerElement: "#turtle-in",
