@@ -19,9 +19,9 @@
 
     <meta name="theme-color" content="#ffffff" />
 
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.0.1/dist/gsap.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.14.2/TweenMax.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/ScrollMagic.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/plugins/animation.gsap.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/plugins/debug.addIndicators.js"></script>
@@ -44,8 +44,8 @@
         <ul>
             <li><img id="open-menu" src="../static/Austausch Flo/01_grundlegendes/menue_hamburger blau.png" /></li>
             <li><a id="pt" class="language-picker-color" href="{{ url_for('pt') }}">PT</a></li>
-            <li><a id="en" class="language-picker-color" href="{{ url_for('en') }}">EN</a></li>
-            <li><a id="de" class="language-picker-color" href="{{ url_for('index') }}">DE</a></li>
+            <li><a id="en" class="language-picker-color" href="{{ url_for('index') }}">EN</a></li>
+            <li><a id="de" class="language-picker-color" href="{{ url_for('de') }}">DE</a></li>
         </ul>
     </nav>
     <div id="cover">
@@ -134,7 +134,7 @@
     <div class="infographic" id="infographic1">
         <div class="info-count" id="waste-count1">
             <span id="waste-count1-number" class="count">78</span><span class="count">,3</span>
-            <p>78,3 million tons of household waste were produced in Brazil in 2016.</p>
+            <p>million tons of household waste were produced in Brazil in 2016.</p>
         </div>
         <div class="info-count" id="waste-count2">
             <span id="waste-count2-number" class="count">42</span><span class="count">%</span>

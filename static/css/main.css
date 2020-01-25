@@ -111,7 +111,7 @@ p {
 nav#menu {
     position: fixed;
     background-color: rgba(253, 164, 146, 1.0);
-    z-index: 10;
+    z-index: 49;
     width: 100vw;
     height: 100vh;
     top: 0;
@@ -159,7 +159,7 @@ nav#menu ul li a {
     top: 2.5%;
     left: 5%;
     position: fixed;
-    z-index: 11;
+    z-index: 50;
     width: 100%;
 }
 
@@ -305,7 +305,7 @@ nav#menu ul li a {
     left: 0;
     z-index: 3;
     width: 50%;
-    opacity: 0;
+    opacity: 1;
 }
 
 #coop-map2 {
@@ -337,6 +337,7 @@ nav#menu ul li a {
 }
 
 #antonio {
+    position: fixed;
     width: 100%;
     bottom: 0;
     z-index: 0;
@@ -638,7 +639,8 @@ nav#intro ul li a {
         font-size: 1rem !important;
         width: 50%;
     }
-    .count {
+    .count,
+    .count-unit {
         font-size: 4rem;
     }
     #impress {
@@ -651,6 +653,7 @@ nav#intro ul li a {
         right: 2%;
         top: 2%;
         width: 7%;
+        z-index: 50;
     }
     #menu-cover {
         position: absolute;
@@ -666,6 +669,7 @@ nav#intro ul li a {
         height: 100vh;
         top: 0;
         display: none;
+        z-index: 49;
     }
     nav#menu ul {
         margin: 0;

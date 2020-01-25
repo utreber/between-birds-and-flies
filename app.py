@@ -4,11 +4,11 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    return render_template('index.html')
+    return render_template('index_en.html')
 
 @app.route('/en')
-def en():
-    return render_template('index_en.html')
+def de():
+    return render_template('index.html')
 
 @app.route('/pt')
 def pt():
