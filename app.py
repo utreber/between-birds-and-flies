@@ -13,3 +13,7 @@ def de():
 @app.route('/pt')
 def pt():
     return render_template('index_pt.html')
+
+@app.route('/test')
+def test():
+    return render_template('test.html')

@@ -524,11 +524,10 @@ $(document).ready(function() {
                 .addTo(controller);
 
             var fadeInFlood3 = fade("#flood3", 0, 1);
-            var slideInFlood3 = slide("#flood3", -5000, 0);
             var fadeOutFlood3 = fade("#flood3", 1, 0);
             var slideOutFlood3 = slide("#flood3", 0, -5000);
             var floodInTimeline = new TimelineMax();
-            floodInTimeline.add(slideInFlood3).add(fadeInFlood3);
+            floodInTimeline.add(fadeInFlood3);
             var fadeInFlood3Scene = new ScrollMagic.Scene({
                     triggerElement: "#flood-in",
                     duration: "20%"
