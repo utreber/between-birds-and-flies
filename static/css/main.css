@@ -111,7 +111,7 @@ p {
 nav#menu {
     position: fixed;
     background-color: rgba(253, 164, 146, 1.0);
-    z-index: 49;
+    z-index: 19;
     width: 100vw;
     height: 100vh;
     top: 0;
@@ -669,7 +669,7 @@ nav#intro ul li a {
         height: 100vh;
         top: 0;
         display: none;
-        z-index: 49;
+        z-index: 19;
     }
     nav#menu ul {
         margin: 0;
